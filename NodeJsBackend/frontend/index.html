@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Manager - לאה ליאן ויפי</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loading.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fab fa-github"></i>
+                <span>Assignment Manager</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#login" class="nav-link">התחברות</a>
+                <a href="#register" class="nav-link">הרשמה</a>
+                <a href="#dashboard" class="nav-link hidden" id="dashboardLink">לוח בקרה</a>
+                <button class="btn-logout hidden" id="logoutBtn">יציאה</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Login Section -->
+        <section id="login" class="auth-section active">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <h2>התחברות למערכת</h2>
+                </div>
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">אימייל</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">סיסמה</label>
+                        <div class="password-input">
+                            <input type="password" id="loginPassword" required>
+                            <i class="fas fa-eye password-toggle" data-target="loginPassword"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">התחבר</button>
+                </form>
+                <p class="auth-switch">אין לך חשבון? <a href="#register">הירשם כאן</a></p>
+            </div>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="auth-section">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <i class="fas fa-user-plus"></i>
+                    <h2>הרשמה למערכת</h2>
+                </div>
+                <form id="registerForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="userId">תעודת זהות</label>
+                        <input type="text" id="userId" maxlength="9" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">שם מלא</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">אימייל</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">סיסמה</label>
+                        <div class="password-input">
+                            <input type="password" id="password" required>
+                            <i class="fas fa-eye password-toggle" data-target="password"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">תפקיד</label>
+                        <select id="role" required>
+                            <option value="">בחר תפקיד</option>
+                            <option value="2">תלמיד</option>
+                            <option value="1">מורה</option>
+                        </select>
+                    </div>
+                    <div class="form-group hidden" id="teacherCodeGroup">
+                        <label for="teacherCode">קוד מורה</label>
+                        <div class="password-input">
+                            <input type="password" id="teacherCode">
+                            <i class="fas fa-eye password-toggle" data-target="teacherCode"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">הירשם</button>
+                </form>
+                <p class="auth-switch">יש לך חשבון? <a href="#login">התחבר כאן</a></p>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="dashboard-section">
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <h2 id="welcomeMessage">ברוך הבא!</h2>
+                    <div class="user-info" id="userInfo"></div>
+                </div>
+
+                <!-- Teacher Dashboard -->
+                <div id="teacherDashboard" class="role-dashboard hidden">
+                    <div class="dashboard-grid">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-plus-circle"></i>
+                                <h3>יצירת מטלה חדשה</h3>
+                            </div>
+                            <form id="assignmentForm" class="card-form">
+                                <div class="form-group">
+                                    <label for="assignmentTitle">כותרת המטלה</label>
+                                    <input type="text" id="assignmentTitle" placeholder="הכנס כותרת למטלה" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="assignmentDescription">תיאור המטלה</label>
+                                    <textarea id="assignmentDescription" placeholder="הכנס תיאור מפורט למטלה" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="assignmentDeadline">תאריך הגשה</label>
+                                    <input type="datetime-local" id="assignmentDeadline" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">צור מטלה</button>
+                            </form>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-tasks"></i>
+                                <h3>מטלות קיימות</h3>
+                            </div>
+                            <div id="assignmentsList" class="assignments-list"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-clipboard-list"></i>
+                                <h3>הגשות לבדיקה</h3>
+                            </div>
+                            <div id="submissionsList" class="submissions-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Dashboard -->
+                <div id="studentDashboard" class="role-dashboard hidden">
+                    <div class="dashboard-grid">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-book-open"></i>
+                                <h3>מטלות פתוחות</h3>
+                            </div>
+                            <div id="openAssignments" class="assignments-list"></div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-upload"></i>
+                                <h3>הגש מטלה</h3>
+                            </div>
+                            <form id="submissionForm" class="card-form">
+                                <div class="form-group">
+                                    <label for="submissionAssignment">בחר מטלה</label>
+                                    <select id="submissionAssignment" required>
+                                        <option value="">בחר מטלה</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="githubLink">קישור GitHub</label>
+                                    <input type="url" id="githubLink" placeholder="https://github.com/username/repository" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="partnerId">תעודת זהות פרטנר (אופציונלי)</label>
+                                    <input type="text" id="partnerId" placeholder="הכנס תעודת זהות של הפרטנר" maxlength="9">
+                                </div>
+                                <button type="submit" class="btn btn-success">הגש מטלה</button>
+                            </form>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fas fa-history"></i>
+                                <h3>ההגשות שלי</h3>
+                            </div>
+                            <div id="mySubmissions" class="submissions-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <!-- Info Modal -->
+    <div id="infoModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-header">
+                <i class="fab fa-github"></i>
+                <h3>מערכת ניהול מטלות - Assignment Manager</h3>
+            </div>
+            <div class="modal-body">
+                <div class="info-section">
+                    <h4><i class="fas fa-chalkboard-teacher"></i> למורים:</h4>
+                    <ul>
+                        <li>יצירת מטלות חדשות</li>
+                        <li>צפייה בהגשות התלמידים</li>
+                        <li>מתן ציונים ומשוב</li>
+                    </ul>
+                </div>
+                <div class="info-section">
+                    <h4><i class="fas fa-user-graduate"></i> לתלמידים:</h4>
+                    <ul>
+                        <li>צפייה במטלות פתוחות</li>
+                        <li>הגשת מטלות עם קישור GitHub</li>
+                        <li>אפשרות להוסיף פרטנר</li>
+                        <li>צפייה בציונים והמשוב</li>
+                    </ul>
+                </div>
+                <div class="info-footer">
+                    <p><i class="fas fa-code"></i> פותח על ידי: לאה'לה ויפי</p>
+                    <p><i class="fas fa-rocket"></i> טכנולוגיות: Node.js, MongoDB, Express</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-cat">
+            <div class="cat-eyes">
+                <div class="cat-eye"></div>
+                <div class="cat-eye"></div>
+            </div>
+            <div class="cat-nose"></div>
+            <div class="cat-mouth"></div>
+        </div>
+        <div class="loading-text">טוען את המערכת</div>
+        <div class="loading-dots">...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

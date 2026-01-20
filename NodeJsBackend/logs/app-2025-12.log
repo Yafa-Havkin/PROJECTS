@@ -1,0 +1,144 @@
+[30/12/2025 20:39:40] INFO: Connected to MongoDB
+[30/12/2025 20:40:19] INFO: [2025-12-30T18:40:19.310Z] Method: OPTIONS, URL: /auth/register
+[30/12/2025 20:40:21] INFO: [2025-12-30T18:40:21.266Z] Method: OPTIONS, URL: /auth/register
+[30/12/2025 20:40:36] INFO: [2025-12-30T18:40:36.810Z] Method: GET, URL: /auth/register
+[30/12/2025 20:42:20] INFO: [2025-12-30T18:42:20.800Z] Method: OPTIONS, URL: /auth/register
+[30/12/2025 20:50:01] INFO: Connected to MongoDB
+[30/12/2025 20:50:44] INFO: Connected to MongoDB
+[30/12/2025 20:51:57] INFO: [2025-12-30T18:51:57.479Z] Method: OPTIONS, URL: /auth/register
+[30/12/2025 20:53:00] INFO: Connected to MongoDB
+[30/12/2025 20:53:43] INFO: [2025-12-30T18:53:43.477Z] Method: POST, URL: /auth/register
+[30/12/2025 20:54:33] INFO: Connected to MongoDB
+[30/12/2025 20:55:22] INFO: [2025-12-30T18:55:22.726Z] Method: POST, URL: /auth/register
+[30/12/2025 20:55:48] INFO: [2025-12-30T18:55:48.940Z] Method: POST, URL: /auth/login
+[30/12/2025 20:55:49] INFO: User logged in successfully
+[30/12/2025 20:56:13] INFO: [2025-12-30T18:56:13.151Z] Method: POST, URL: /auth/login
+[30/12/2025 20:56:13] INFO: User logged in successfully
+[30/12/2025 21:00:14] INFO: [2025-12-30T19:00:14.071Z] Method: POST, URL: /auth/login
+[30/12/2025 21:00:14] INFO: User logged in successfully
+[30/12/2025 21:01:28] INFO: [2025-12-30T19:01:28.296Z] Method: POST, URL: /auth/login
+[30/12/2025 21:01:28] INFO: User logged in successfully
+[30/12/2025 21:01:28] INFO: [2025-12-30T19:01:28.383Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:01:28] INFO: [2025-12-30T19:01:28.407Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:01:28] INFO: [2025-12-30T19:01:28.463Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:05:51] INFO: [2025-12-30T19:05:51.687Z] Method: POST, URL: /auth/register
+[30/12/2025 21:06:04] INFO: [2025-12-30T19:06:04.665Z] Method: POST, URL: /auth/register
+[30/12/2025 21:06:46] INFO: Connected to MongoDB
+[30/12/2025 21:07:40] INFO: [2025-12-30T19:07:40.329Z] Method: POST, URL: /auth/register
+[30/12/2025 21:07:55] INFO: [2025-12-30T19:07:55.830Z] Method: POST, URL: /auth/register
+[30/12/2025 21:08:26] INFO: [2025-12-30T19:08:26.865Z] Method: POST, URL: /auth/login
+[30/12/2025 21:08:26] INFO: User logged in successfully
+[30/12/2025 21:08:26] INFO: [2025-12-30T19:08:26.959Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:08:26] INFO: [2025-12-30T19:08:26.980Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:09:07] INFO: [2025-12-30T19:09:07.900Z] Method: POST, URL: /teacher/assignments
+[30/12/2025 21:09:07] INFO: Assignment created successfully.
+[30/12/2025 21:09:07] INFO: [2025-12-30T19:09:07.921Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:09:30] INFO: [2025-12-30T19:09:30.687Z] Method: PUT, URL: /teacher/undefined/undefined
+[30/12/2025 21:13:07] INFO: Connected to MongoDB
+[30/12/2025 21:13:18] INFO: [2025-12-30T19:13:18.875Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:13:18] INFO: [2025-12-30T19:13:18.935Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:14:21] INFO: [2025-12-30T19:14:21.276Z] Method: POST, URL: /teacher/assignments
+[30/12/2025 21:14:21] INFO: Assignment created successfully.
+[30/12/2025 21:14:21] INFO: [2025-12-30T19:14:21.297Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:14:52] INFO: [2025-12-30T19:14:52.879Z] Method: PUT, URL: /teacher/undefined/undefined
+[30/12/2025 21:15:57] INFO: [2025-12-30T19:15:57.729Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:15:57] INFO: [2025-12-30T19:15:57.756Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:16:11] INFO: [2025-12-30T19:16:11.241Z] Method: PUT, URL: /teacher/123456789/[object%20Object]
+[30/12/2025 21:17:05] INFO: [2025-12-30T19:17:05.482Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:17:05] INFO: [2025-12-30T19:17:05.509Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:17:16] INFO: [2025-12-30T19:17:16.990Z] Method: PUT, URL: /teacher/123456789/[object%20Object]
+[30/12/2025 21:18:37] INFO: [2025-12-30T19:18:37.535Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:18:37] INFO: [2025-12-30T19:18:37.568Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:18:51] INFO: [2025-12-30T19:18:51.417Z] Method: PUT, URL: /teacher/123456789/[object%20Object]
+[30/12/2025 21:20:43] INFO: [2025-12-30T19:20:43.396Z] Method: POST, URL: /auth/login
+[30/12/2025 21:20:43] INFO: User logged in successfully
+[30/12/2025 21:20:43] INFO: [2025-12-30T19:20:43.487Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:20:43] INFO: [2025-12-30T19:20:43.509Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:20:43] INFO: [2025-12-30T19:20:43.532Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:22:18] INFO: [2025-12-30T19:22:18.120Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:22:18] INFO: [2025-12-30T19:22:18.141Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:22:18] INFO: [2025-12-30T19:22:18.171Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:23:57] INFO: [2025-12-30T19:23:57.506Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:23:57] INFO: [2025-12-30T19:23:57.530Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:23:57] INFO: [2025-12-30T19:23:57.596Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:25:34] INFO: [2025-12-30T19:25:34.465Z] Method: POST, URL: /student/submissions
+[30/12/2025 21:26:44] INFO: [2025-12-30T19:26:44.698Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:26:44] INFO: [2025-12-30T19:26:44.723Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:26:44] INFO: [2025-12-30T19:26:44.767Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:26:50] INFO: [2025-12-30T19:26:50.411Z] Method: POST, URL: /student/submissions
+[30/12/2025 21:28:31] INFO: [2025-12-30T19:28:31.631Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:28:31] INFO: [2025-12-30T19:28:31.674Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:28:31] INFO: [2025-12-30T19:28:31.709Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:28:39] INFO: [2025-12-30T19:28:39.958Z] Method: POST, URL: /student/submissions
+[30/12/2025 21:30:04] INFO: [2025-12-30T19:30:04.065Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:30:04] INFO: [2025-12-30T19:30:04.093Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:30:04] INFO: [2025-12-30T19:30:04.122Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:30:11] INFO: [2025-12-30T19:30:11.011Z] Method: POST, URL: /student/submissions
+[30/12/2025 21:31:21] INFO: [2025-12-30T19:31:21.155Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:31:21] INFO: [2025-12-30T19:31:21.181Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:31:21] INFO: [2025-12-30T19:31:21.212Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:31:29] INFO: [2025-12-30T19:31:29.238Z] Method: POST, URL: /student/submissions
+[30/12/2025 21:31:29] INFO: Submission created successfully.
+[30/12/2025 21:31:29] INFO: Submission created successfully.
+[30/12/2025 21:31:29] INFO: [2025-12-30T19:31:29.262Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:33:12] INFO: [2025-12-30T19:33:12.278Z] Method: POST, URL: /student/submissions
+[30/12/2025 21:33:12] INFO: Submission created successfully.
+[30/12/2025 21:33:12] INFO: Submission created successfully.
+[30/12/2025 21:33:12] INFO: [2025-12-30T19:33:12.301Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:33:39] INFO: [2025-12-30T19:33:39.139Z] Method: POST, URL: /auth/login
+[30/12/2025 21:33:39] INFO: User logged in successfully
+[30/12/2025 21:33:39] INFO: [2025-12-30T19:33:39.232Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:33:39] INFO: [2025-12-30T19:33:39.249Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:34:30] INFO: [2025-12-30T19:34:30.575Z] Method: PUT, URL: /teacher/111111111/[object%20Object]
+[30/12/2025 21:34:50] INFO: [2025-12-30T19:34:50.142Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:34:50] INFO: [2025-12-30T19:34:50.173Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:35:22] INFO: [2025-12-30T19:35:22.734Z] Method: PUT, URL: /teacher/111111111/[object%20Object]
+[30/12/2025 21:36:08] INFO: [2025-12-30T19:36:08.037Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:36:08] INFO: [2025-12-30T19:36:08.060Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:36:35] INFO: [2025-12-30T19:36:35.158Z] Method: PUT, URL: /teacher/111111111/695404d05444e5b15c7fec53
+[30/12/2025 21:36:35] INFO: [2025-12-30T19:36:35.175Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:39:55] INFO: [2025-12-30T19:39:55.850Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:39:55] INFO: [2025-12-30T19:39:55.883Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:42:07] INFO: [2025-12-30T19:42:07.814Z] Method: GET, URL: /teacher/assignments
+[30/12/2025 21:42:07] INFO: [2025-12-30T19:42:07.831Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:42:27] INFO: [2025-12-30T19:42:27.616Z] Method: PUT, URL: /teacher/123456789/695404d05444e5b15c7fec53
+[30/12/2025 21:42:27] INFO: [2025-12-30T19:42:27.628Z] Method: GET, URL: /teacher/submissions
+[30/12/2025 21:43:02] INFO: [2025-12-30T19:43:02.216Z] Method: POST, URL: /auth/login
+[30/12/2025 21:43:02] INFO: User logged in successfully
+[30/12/2025 21:43:02] INFO: [2025-12-30T19:43:02.305Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:43:02] INFO: [2025-12-30T19:43:02.314Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:43:02] INFO: [2025-12-30T19:43:02.341Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:47:25] INFO: [2025-12-30T19:47:25.571Z] Method: POST, URL: /auth/login
+[30/12/2025 21:47:25] INFO: User logged in successfully
+[30/12/2025 21:47:25] INFO: [2025-12-30T19:47:25.663Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:47:25] INFO: [2025-12-30T19:47:25.684Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:47:25] INFO: [2025-12-30T19:47:25.714Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:49:39] INFO: [2025-12-30T19:49:39.276Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:49:39] INFO: [2025-12-30T19:49:39.295Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:49:39] INFO: [2025-12-30T19:49:39.326Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:50:12] INFO: [2025-12-30T19:50:12.350Z] Method: POST, URL: /auth/login
+[30/12/2025 21:50:12] INFO: User logged in successfully
+[30/12/2025 21:50:12] INFO: [2025-12-30T19:50:12.445Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:50:12] INFO: [2025-12-30T19:50:12.464Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:50:12] INFO: [2025-12-30T19:50:12.491Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:52:34] INFO: [2025-12-30T19:52:34.371Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:52:34] INFO: [2025-12-30T19:52:34.390Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:52:34] INFO: [2025-12-30T19:52:34.433Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:52:58] INFO: [2025-12-30T19:52:58.597Z] Method: POST, URL: /auth/login
+[30/12/2025 21:52:58] INFO: User logged in successfully
+[30/12/2025 21:52:58] INFO: [2025-12-30T19:52:58.682Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:52:58] INFO: [2025-12-30T19:52:58.690Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:52:58] INFO: [2025-12-30T19:52:58.706Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:55:27] INFO: [2025-12-30T19:55:27.349Z] Method: POST, URL: /auth/login
+[30/12/2025 21:55:27] INFO: User logged in successfully
+[30/12/2025 21:55:27] INFO: [2025-12-30T19:55:27.436Z] Method: GET, URL: /student/assignments
+[30/12/2025 21:55:27] INFO: [2025-12-30T19:55:27.453Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 21:55:27] INFO: [2025-12-30T19:55:27.482Z] Method: GET, URL: /student/assignments
+[30/12/2025 22:02:57] INFO: [2025-12-30T20:02:57.022Z] Method: GET, URL: /student/assignments
+[30/12/2025 22:02:57] INFO: [2025-12-30T20:02:57.041Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 22:02:57] INFO: [2025-12-30T20:02:57.080Z] Method: GET, URL: /student/assignments
+[30/12/2025 22:03:27] INFO: [2025-12-30T20:03:27.057Z] Method: POST, URL: /auth/login
+[30/12/2025 22:03:27] INFO: User logged in successfully
+[30/12/2025 22:03:29] INFO: [2025-12-30T20:03:29.169Z] Method: GET, URL: /student/assignments
+[30/12/2025 22:03:29] INFO: [2025-12-30T20:03:29.211Z] Method: GET, URL: /student/submissions/me
+[30/12/2025 22:03:29] INFO: [2025-12-30T20:03:29.239Z] Method: GET, URL: /student/assignments

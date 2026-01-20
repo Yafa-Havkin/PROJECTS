@@ -1,0 +1,873 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f6f8fa;
+    min-height: 100vh;
+    color: #24292f;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-brand i {
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+.btn-logout {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #ff3742;
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* Auth Sections Animation */
+.auth-section {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.auth-section.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Input Focus Animation */
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.15);
+}
+
+.form-group label {
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus + label,
+.form-group select:focus + label,
+.form-group textarea:focus + label {
+    color: #4ecdc4;
+    transform: translateY(-2px);
+}
+
+.auth-container {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.auth-container::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header i {
+    font-size: 3rem;
+    color: #4ecdc4;
+    margin-bottom: 1rem;
+}
+
+.auth-header h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 2px solid #e1e8ed;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4ecdc4;
+    box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
+}
+
+/* Button Loading Animation */
+.btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn.loading {
+    pointer-events: none;
+    opacity: 0.8;
+    position: relative;
+}
+
+.btn.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    z-index: 10;
+}
+
+.btn.loading .btn-text {
+    visibility: hidden;
+}
+
+/* Make sure spinner is visible on all button types */
+.btn-primary.loading::after {
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top: 3px solid white;
+}
+
+.btn-success.loading::after {
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top: 3px solid white;
+}
+
+.btn-danger.loading::after {
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top: 3px solid white;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(78, 205, 196, 0.3);
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #96ceb4, #4ecdc4);
+    color: white;
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(150, 206, 180, 0.3);
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    color: white;
+}
+
+.btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+.auth-switch a {
+    color: #4ecdc4;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-section {
+    display: none;
+}
+
+.dashboard-section.active {
+    display: block;
+}
+
+.dashboard-container {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #f1f3f4;
+}
+
+.dashboard-header h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+.user-info {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Teacher Dashboard - GitHub Style */
+#teacherDashboard {
+    background: #f6f8fa;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+    border: 1px solid #d1d9e0;
+}
+
+#teacherDashboard .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+#teacherDashboard .card {
+    background: #ffffff;
+    border: 1px solid #d1d9e0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(140, 149, 159, 0.15);
+    transition: all 0.2s ease;
+}
+
+#teacherDashboard .card::before {
+    display: none;
+}
+
+#teacherDashboard .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
+    border-color: #238636;
+}
+
+#teacherDashboard .card-header {
+    border-bottom: 1px solid #d1d9e0;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    background: #f6f8fa;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 12px 12px 0 0;
+}
+
+#teacherDashboard .card-header i {
+    color: #238636;
+}
+
+#teacherDashboard .card-header h3 {
+    color: #24292f;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#teacherDashboard .card-form .form-group label {
+    color: #24292f;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+#teacherDashboard .card-form input,
+#teacherDashboard .card-form select,
+#teacherDashboard .card-form textarea {
+    background: #ffffff;
+    border: 1px solid #d1d9e0;
+    color: #24292f;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+#teacherDashboard .card-form input::placeholder,
+#teacherDashboard .card-form textarea::placeholder {
+    color: #656d76;
+}
+
+#teacherDashboard .card-form input:focus,
+#teacherDashboard .card-form select:focus,
+#teacherDashboard .card-form textarea:focus {
+    border-color: #0969da;
+    box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.12);
+    outline: none;
+}
+
+#teacherDashboard .btn-primary {
+    background: #238636;
+    border: 1px solid #238636;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#teacherDashboard .btn-primary:hover {
+    background: #2ea043;
+    border-color: #2ea043;
+    transform: none;
+    box-shadow: 0 3px 12px rgba(35, 134, 54, 0.15);
+}
+
+#teacherDashboard .assignment-item,
+#teacherDashboard .submission-item {
+    background: #ffffff;
+    border: 1px solid #d1d9e0;
+    border-left: 3px solid #238636;
+    border-radius: 6px;
+    box-shadow: none;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+#teacherDashboard .assignment-item:hover,
+#teacherDashboard .submission-item:hover {
+    background: #f6f8fa;
+    border-color: #d1d9e0;
+    border-left-color: #2ea043;
+    transform: none;
+    box-shadow: 0 3px 12px rgba(140, 149, 159, 0.15);
+}
+
+#teacherDashboard .assignment-title,
+#teacherDashboard .submission-title {
+    color: #0969da;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#teacherDashboard .assignment-description,
+#teacherDashboard .submission-description {
+    color: #656d76;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#teacherDashboard .assignment-deadline,
+#teacherDashboard .submission-status {
+    color: #238636;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#teacherDashboard .grade-form {
+    background: #f6f8fa;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #d1d9e0;
+    margin-top: 12px;
+}
+
+#teacherDashboard .grade-form input {
+    background: #ffffff;
+    border: 1px solid #d1d9e0;
+    color: #24292f;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 14px;
+}
+
+#teacherDashboard .grade-form input:focus {
+    border-color: #0969da;
+    box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.12);
+}
+
+#teacherDashboard .grade-form button {
+    background: #238636;
+    border: 1px solid #238636;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#teacherDashboard .grade-form button:hover {
+    background: #2ea043;
+    border-color: #2ea043;
+}
+
+/* Teacher Dashboard Header */
+#teacherDashboard .dashboard-header {
+    background: #ffffff;
+    margin: -2rem -2rem 2rem -2rem;
+    padding: 2rem;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #d1d9e0;
+}
+
+#teacherDashboard .dashboard-header h2 {
+    color: #24292f;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#teacherDashboard .user-info {
+    background: #238636;
+    border: 1px solid #238636;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Scrollbar styling for GitHub look */
+#teacherDashboard .assignments-list::-webkit-scrollbar,
+#teacherDashboard .submissions-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#teacherDashboard .assignments-list::-webkit-scrollbar-track,
+#teacherDashboard .submissions-list::-webkit-scrollbar-track {
+    background: #f6f8fa;
+    border-radius: 4px;
+}
+
+#teacherDashboard .assignments-list::-webkit-scrollbar-thumb,
+#teacherDashboard .submissions-list::-webkit-scrollbar-thumb {
+    background: #d1d9e0;
+    border-radius: 4px;
+}
+
+#teacherDashboard .assignments-list::-webkit-scrollbar-thumb:hover,
+#teacherDashboard .submissions-list::-webkit-scrollbar-thumb:hover {
+    background: #8c959f;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+    border-radius: 15px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-header i {
+    font-size: 1.5rem;
+    color: #4ecdc4;
+}
+
+.card-header h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+}
+
+.card-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-form .form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.2rem;
+}
+
+.card-form input,
+.card-form select,
+.card-form textarea {
+    padding: 0.8rem;
+    border: 2px solid #e1e8ed;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+    color: #2c3e50;
+}
+
+.card-form input:focus,
+.card-form select:focus,
+.card-form textarea:focus {
+    outline: none;
+    border-color: #4ecdc4;
+    box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
+    transform: translateY(-2px);
+}
+
+.card-form textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.card-form input[type="datetime-local"] {
+    cursor: pointer;
+}
+
+.card-form input::placeholder,
+.card-form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.assignments-list,
+.submissions-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.assignment-item,
+.submission-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #4ecdc4;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.assignment-item:hover,
+.submission-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.assignment-title,
+.submission-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.assignment-description,
+.submission-description {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.assignment-deadline,
+.submission-status {
+    font-size: 0.9rem;
+    color: #4ecdc4;
+    font-weight: 500;
+}
+
+.grade-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.grade-form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.grade-form button {
+    padding: 0.5rem 1rem;
+    background: #4ecdc4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    z-index: 1000;
+    transform: translateX(400px);
+    transition: all 0.3s ease;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification.success {
+    background: linear-gradient(45deg, #96ceb4, #4ecdc4);
+}
+
+.notification.error {
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+/* Password Input with Eye Toggle */
+.password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input input {
+    padding-left: 0.8rem;
+    padding-right: 3rem;
+    width: 100%;
+}
+
+.password-toggle {
+    position: absolute;
+    left: 0.8rem;
+    cursor: pointer;
+    color: #666;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    z-index: 10;
+}
+
+.password-toggle:hover {
+    color: #4ecdc4;
+}
+
+.password-input input:focus + .password-toggle {
+    color: #4ecdc4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .main-content {
+        padding: 0 1rem;
+    }
+    
+    .auth-container {
+        padding: 2rem;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}

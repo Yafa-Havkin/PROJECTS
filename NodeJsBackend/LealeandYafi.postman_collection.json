@@ -1,0 +1,742 @@
+{
+	"info": {
+		"_postman_id": "49cf09c6-8397-4f61-819f-c981b7b7a48c",
+		"name": "LealeandYafi_Complete",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49578962"
+	},
+	"item": [
+		{
+			"name": "1_student_1_logup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"123456789\",\r\n  \"name\": \"StudentName\",\r\n  \"email\": \"student@example.com\",\r\n  \"password\": \"StrongPassword1234\",\r\n  \"role\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2_student_2_logup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"222222222\",\r\n  \"name\": \"Bob\",\r\n  \"email\": \"bob@student.com\",\r\n  \"password\": \"StrongPassword4567\",\r\n  \"role\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3_student_3_logup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"333333333\",\r\n  \"name\": \"Charlie\",\r\n  \"email\": \"charlie@student.com\",\r\n  \"password\": \"StrongPassword789b\",\r\n  \"role\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4_teacher_1_logup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"987654321\",\r\n  \"name\": \"Teacher\",\r\n  \"email\": \"teacher@example.com\",\r\n  \"password\": \"StrongPassword1234\",\r\n  \"role\": 1,\r\n  \"teacherCode\": \"leahleandyafi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5_teacher_2_logup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"555555555\",\r\n  \"name\": \"Emma\",\r\n  \"email\": \"emma@teacher.com\",\r\n  \"password\": \"StrongPassword4567\",\r\n  \"role\": 1,\r\n  \"teacherCode\": \"leahleandyafi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6_teacher_3_logup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"666666666\",\r\n  \"name\": \"Frank\",\r\n  \"email\": \"frank@teacher.com\",\r\n  \"password\": \"MyPassword\",\r\n  \"role\": 1,\r\n  \"teacherCode\": \"leahleandyafi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7_teacher_1_signIn_and_get_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"teacher@example.com\",\r\n  \"password\": \"StrongPassword1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "login"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8_student_1_login_and_get_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"student@example.com\",\r\n  \"password\": \"StrongPassword1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "login"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9_student_2_login_and_get_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\": \"bob@student.com\",\r\n  \"password\": \"StrongPassword4567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "login"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10_student_3_login_and_get_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\": \"charlie@student.com\",\r\n  \"password\": \"StrongPassword789b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "login"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11_create_assignment_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{teacher_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"JavaScript Basics\",\r\n  \"description\": \"Create a simple calculator\", \r\n  \"deadline\": \"2026-02-15T23:59:59.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher/assignments",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "assignments"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12_create_assignment_2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{teacher_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"React Components\",\r\n  \"description\": \"Build a todo list with React hooks\",\r\n  \"deadline\": \"2026-07-15T23:59:59.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher/assignments",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "assignments"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13_create_assignment_3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{teacher_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Node.js API\",\r\n  \"description\": \"Create REST API with Express and MongoDB\",\r\n  \"deadline\": \"2026-08-30T23:59:59.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher/assignments",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "assignments"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14_student_get_open_assignments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{student_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/student/assignments",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["student", "assignments"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15_student_1_submit_assignment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{student1_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"assignmentId\": \"{{assignment1_id}}\",\r\n  \"githubLink\": \"https://github.com/alice/calculator\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student/submissions",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["student", "submissions"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16_student_2_submit_assignment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{student2_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"assignmentId\": \"{{assignment1_id}}\",\r\n  \"githubLink\": \"https://github.com/bob/calculator\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student/submissions",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["student", "submissions"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17_student_3_submit_assignment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{student3_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"assignmentId\": \"{{assignment1_id}}\",\r\n  \"githubLink\": \"https://github.com/charlie/calculator\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student/submissions",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["student", "submissions"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18_student_get_my_submissions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{student_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/student/submissions/me/",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["student", "submissions", "me", ""]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19_teacher_get_all_submissions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{teacher_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/teacher/submissions",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "submissions"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20_teacher_grade_submission_1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{teacher_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"grade\": 88,\r\n  \"feedback\": \"Good work on the calculator!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher/{{student1_id}}/{{assignment1_id}}",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "{{student1_id}}", "{{assignment1_id}}"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "21_teacher_grade_submission_2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{teacher_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"grade\": 92,\r\n  \"feedback\": \"Excellent implementation!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher/{{student2_id}}/{{assignment1_id}}",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "{{student2_id}}", "{{assignment1_id}}"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "22_teacher_grade_submission_3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{teacher_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"grade\": 85,\r\n  \"feedback\": \"Good effort, needs improvement in error handling\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher/{{student3_id}}/{{assignment1_id}}",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "{{student3_id}}", "{{assignment1_id}}"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "23_teacher_get_statistics",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{teacher_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/teacher/stats/detailed",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "stats", "detailed"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "24_student_get_class_averages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{student_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/student/stats/averages",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["student", "stats", "averages"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR_1_Invalid_ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"12345\",\r\n  \"name\": \"Test\",\r\n  \"email\": \"test@example.com\",\r\n  \"password\": \"StrongPassword123!\",\r\n  \"role\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR_2_Weak_Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"123456789\",\r\n  \"name\": \"Test\",\r\n  \"email\": \"test@example.com\",\r\n  \"password\": \"123\",\r\n  \"role\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR_3_Teacher_No_Code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"888888888\",\r\n  \"name\": \"Teacher\",\r\n  \"email\": \"badteacher@example.com\",\r\n  \"password\": \"StrongPassword123!\",\r\n  \"role\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["auth", "register"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR_4_No_Token_Access",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/student/assignments",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["student", "assignments"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR_5_Student_Tries_Teacher_Action",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMjM0NTY3ODkiLCJyb2xlIjoyLCJpYXQiOjE3NjcxMTI5MTQsImV4cCI6MTc2OTcwNDkxNH0.qdes-xm82G-n7vukC6EF7YNjrXK5en16eLcwb4PSk3k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Test\",\r\n  \"description\": \"Test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/teacher/assignments",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["teacher", "assignments"]
+				}
+			},
+			"response": []
+		}
+	]
+}

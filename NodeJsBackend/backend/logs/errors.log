@@ -1,0 +1,18 @@
+[30/12/2025 18:22:12] ERROR: Error: Cannot destructure property 'userId' of 'req.body' as it is undefined.
+[30/12/2025 18:24:05] ERROR: Error: Cannot destructure property 'userId' of 'req.body' as it is undefined.
+[30/12/2025 19:04:41] ERROR: Error: Error creating submission
+[30/12/2025 19:05:02] ERROR: Error: Error creating submission
+[30/12/2025 19:06:05] ERROR: Error: Error creating submission
+[30/12/2025 19:06:56] ERROR: Error: Error creating submission
+[30/12/2025 19:09:29] ERROR: Error: Error creating submission
+[30/12/2025 19:10:10] ERROR: Error: Error creating submission
+[30/12/2025 19:17:15] ERROR: Error: Error creating submission
+[30/12/2025 19:19:09] ERROR: Error: Error creating submission
+[30/12/2025 19:20:51] ERROR: Error: Error fetching your submissions
+[30/12/2025 19:21:04] ERROR: Error: Error fetching your submissions
+[30/12/2025 19:22:49] ERROR: Error: Error retrieving submissions
+[30/12/2025 19:40:52] ERROR: Error: Error updating submission
+[31/12/2025 19:36:23] ERROR: Error: Error during registration
+[31/12/2025 19:36:33] ERROR: Error: Error during registration
+[31/12/2025 20:18:22] ERROR: Invalid email or password
+[31/12/2025 20:18:33] ERROR: Invalid email or password
