@@ -1,0 +1,269 @@
+ body {
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     overflow-x: hidden;
+ }
+
+ main {
+     display: flex;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ header {
+     font-size: 350%;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     position: sticky;
+     top: 0%;
+     color: azure;
+     text-align: end;
+     align-content: center;
+     height: 25vh;
+     padding: 3%;
+     z-index: 2;
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-weight: bold;
+     backdrop-filter: blur(2px);
+     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+     transition: all 0.3s ease;
+ }
+
+ .sameImage {
+     background-image: url(images/שוויץ/sunset-3616672_640.jpg);
+ }
+
+ header span {
+     font-size: 50%;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     direction: initial;
+     border-color: white;
+     border-style: double;
+     border-width: 3px;
+     padding: 0.8%;
+     margin: 1%;
+     position: absolute;
+     transform: rotate(12deg);
+     left: 20%;
+     top: 15%;
+     font-weight: 300;
+     background: rgba(255,255,255,0.1);
+     backdrop-filter: blur(10px);
+     border-radius: 15px;
+     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+     transition: all 0.3s ease;
+ }
+
+ nav {
+     background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(20,20,20,0.9));
+     height: 7vh;
+     text-align: center;
+     align-content: center;
+     font-size: medium;
+     position: sticky;
+     top: 25vh;
+     font-weight: bold;
+     z-index: 2;
+     backdrop-filter: blur(10px);
+     border-top: 1px solid rgba(255,255,255,0.1);
+     border-bottom: 1px solid rgba(255,255,255,0.1);
+     box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+ }
+
+
+
+ a {
+     text-decoration: none;
+     margin: 5%;
+     height: 20vh;
+     color: azure;
+     transition: all 0.3s ease;
+     position: relative;
+ }
+
+ nav a:hover {
+     color: #4CAF50;
+     transform: translateY(-2px);
+     text-shadow: 0 2px 8px rgba(76, 175, 80, 0.6);
+ }
+
+ nav a::after {
+     content: '';
+     position: absolute;
+     bottom: -5px;
+     left: 50%;
+     width: 0;
+     height: 2px;
+     background: linear-gradient(90deg, #4CAF50, #81C784);
+     transition: all 0.3s ease;
+     transform: translateX(-50%);
+ }
+
+ nav a:hover::after {
+     width: 100%;
+ }
+
+ footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     height: 3.5vh;
+     color: white;
+     background: linear-gradient(135deg, rgba(7,7,7,0.95), rgba(25,25,25,0.95));
+     text-align: center;
+     backdrop-filter: blur(10px);
+     border-top: 1px solid rgba(255,255,255,0.1);
+     font-size: 0.9em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 1000;
+ }
+
+ #logo {
+     width: 14%;
+     height: 12%;
+     transform: rotate(0deg);
+     animation-name: bigersmallerlogo;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     position: fixed;
+     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+     transition: all 0.3s ease;
+ }
+
+ #logo:hover {
+     animation-play-state: paused;
+     transform: rotate(0deg) scale(1.1);
+     filter: drop-shadow(0 6px 12px rgba(0,0,0,0.7));
+ }
+
+ .top {
+     left: 3%;
+     top: 2%;
+ }
+
+ @keyframes bigersmallerlogo {
+     0% {
+         width: 14%;
+         height: 12%;
+         transform: rotate(0deg);
+     }
+
+     25% {
+         transform: rotate(0deg);
+     }
+
+     50% {
+         width: 16%;
+         height: 20%;
+         transform: rotate(0deg);
+     }
+
+     75% {
+         transform: rotate(0deg);
+     }
+
+     100% {
+         width: 14%;
+         height: 12%;
+         transform: rotate(0deg);
+     }
+ }
+
+ @media (max-width: 700px) {
+     #logo {
+         width: 200px;
+         height: 200px;
+
+     }
+
+     nav {
+
+         top: 20%;
+     }
+ }
+
+/* אפקטים נוספים לשיפור החוויה */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* אפקט loading עדין */
+body {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* שיפור הנגישות */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+/* אפקט hover לכל הקישורים */
+a {
+    position: relative;
+    overflow: hidden;
+}
+
+/* אפקט זוהר עדין */
+.glow {
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+}
+
+/* מדיה קוורי משופר */
+@media (max-width: 768px) {
+    header {
+        font-size: 250%;
+        height: 20vh;
+    }
+    
+    header span {
+        font-size: 40%;
+        left: 65%;
+    }
+    
+    nav {
+        top: 30%;
+        font-size: small;
+    }
+    
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 200%;
+        height: 18vh;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    nav a {
+        margin: 2%;
+        font-size: 0.9em;
+    }
+}

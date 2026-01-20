@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planningATrip</title>
+    <link rel="stylesheet" href="planningATrip.css">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <header class="sameImage">
+
+        <a href="../homePage/homePage.html"> S&Y TRAVELS</a>
+        <br>
+        <span>נסיעה בשיתוף פעולה</span>
+        <br>
+        <img id="logo" class="top" src="../../images/לוגו-removebg-preview.png">
+
+
+    </header>
+    <br>
+    <nav>
+        <a href="../homePage/homePage.html">home page</a>
+        <a href="../fligthOffer/fligthOffer.html">fligth offer</a>
+        <a href="../planning a trip/planningATrip.html">planning a trip</a>
+        <a href="../about us/aboutUs.html">about us</a>
+
+    </nav>
+
+    <main>
+
+
+        <form action="../ThenkYou/ThenkYou.html">
+            <h1>Planning A trip</h1>
+            <div class="inputstyps">
+                <div>
+                    <label for="nameid"> Enter your name</label>
+                    <input id="nameid" name="name" type="text" required placeholder="Antiyuchus" />
+                </div>
+                <div>
+                    <label for="foneid"> Enter your fone</label>
+                    <input id="foneid" name="fone" type="text" />
+                </div>
+                <div>
+                    <label for="emailid"> Enter your email</label>
+                    <input id="emailid" name="email" required />
+                </div>
+                <div>
+                    <label for="ageid"> Enter your age</label>
+                    <input id="ageid" name="age" type="number" min="18" placeholder="119" />
+                </div>
+            </div>
+            <div class="inputstyps">
+                <fieldset>
+                    <legend>Do you allow intermediate landing?</legend>
+                    <label for="intermediateLandingId">I allow</label>
+                    <input id="allowExperianceId" name="intermediateLanding" type="radio" value="allowExperiance" />
+                    <label for="intermediateLandingId">I dont allow</label>
+                    <input id="cantAllowExperianceId" name="intermediateLanding" type="radio"
+                        value="cantAllowExperiance" />
+                </fieldset>
+                <fieldset>
+                    <legend>What is your favorate contient?</legend>
+                    <input id="AfricaId" name="favorateContient" type="checkbox" value="Africa" />
+                    <label for="favorateContient">Africa</label>
+
+                    <input id="AsiaId" name="favorateContient" type="checkbox" value="Asia" />
+                    <label for="favorateContientId">Asia</label>
+
+                    <input id="AmericaId" name="favorateContient" type="checkbox" value="America" />
+                    <label for="favorateContientId">America</label>
+
+                    <input id="EuropeId" name="favorateContient" type="checkbox" value="Europe" />
+                    <label for="favorateContient">Europe</label>
+
+                </fieldset>
+            </div>
+            <div class="inputstyps">
+                <label for="textareaid">some words about your trip dream:</label>
+                <textarea name="aboutyorself" id="textareaid" rows="5" cols="40"> type here...</textarea>
+
+            </div>
+
+            <button type="submit">save</button>
+
+        </form>
+        <table>
+            <caption>prices</caption>
+            <thead>
+                <th> סוג טיסה</th>
+                <th> Israel</th>
+                <th> NewYork</th>
+                <th> Swiss</th>
+                <th> Dubai</th>
+                <th> FarEast</th>
+
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th>טיסה עם עצירת ביניים</th>
+                    <td rowspan="2">בחינם</td>
+                    <td> 1500$</td>
+                    <td> 1000$</td>
+                    <td> 500$</td>
+                    <td> 800$</td>
+
+
+                </tr>
+                <tr>
+                    <th> טיסה ישירה</th>
+
+                    <td> 19500$</td>
+                    <td> 1200$</td>
+                    <td> 590$</td>
+                    <td> 1000$</td>
+
+
+
+                </tr>
+
+            </tbody>
+        </table>
+
+    </main>
+    <br>
+    <footer>@ שותפות לעשיה שיפי ויפי</footer>
+</body>
+
+</html>
