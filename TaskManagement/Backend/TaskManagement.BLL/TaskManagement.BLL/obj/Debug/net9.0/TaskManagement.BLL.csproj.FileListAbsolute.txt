@@ -1,0 +1,12 @@
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\bin\Debug\net9.0\TaskManagement.BLL.deps.json
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\bin\Debug\net9.0\TaskManagement.BLL.dll
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\bin\Debug\net9.0\TaskManagement.BLL.pdb
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\TaskManagement.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\TaskManagement.BLL.AssemblyInfoInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\TaskManagement.BLL.AssemblyInfo.cs
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\TaskManagement.BLL.csproj.CoreCompileInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\TaskManagement.BLL.sourcelink.json
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\TaskManagement.BLL.dll
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\refint\TaskManagement.BLL.dll
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\TaskManagement.BLL.pdb
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.BLL\TaskManagement.BLL\obj\Debug\net9.0\ref\TaskManagement.BLL.dll

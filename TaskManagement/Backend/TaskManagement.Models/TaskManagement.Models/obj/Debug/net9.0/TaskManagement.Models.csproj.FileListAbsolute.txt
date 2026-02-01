@@ -1,0 +1,12 @@
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\bin\Debug\net9.0\TaskManagement.Models.deps.json
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\bin\Debug\net9.0\TaskManagement.Models.dll
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\bin\Debug\net9.0\TaskManagement.Models.pdb
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\TaskManagement.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\TaskManagement.Models.AssemblyInfoInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\TaskManagement.Models.AssemblyInfo.cs
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\TaskManagement.Models.csproj.CoreCompileInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\TaskManagement.Models.sourcelink.json
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\TaskManagement.Models.dll
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\refint\TaskManagement.Models.dll
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\TaskManagement.Models.pdb
+C:\יפי\לימודים\ו\PROJECTS\TaskManagement\Backend\TaskManagement.Models\TaskManagement.Models\obj\Debug\net9.0\ref\TaskManagement.Models.dll
