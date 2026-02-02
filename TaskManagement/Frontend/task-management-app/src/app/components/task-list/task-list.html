@@ -1,0 +1,39 @@
+<div class="task-container">
+  <div class="header">
+    <h1>Task Management</h1>
+  </div>
+
+  <div class="add-task-form">
+    <input 
+      type="text" 
+      [(ngModel)]="newTaskTitle" 
+      placeholder="Enter task title"
+      class="task-input"
+    >
+    <button (click)="addTask()" class="add-btn">Add Task</button>
+  </div>
+  
+  <div class="tasks-list" *ngIf="tasks.length > 0">
+    <div *ngFor="let task of tasks" class="task-item">
+      <input 
+        type="checkbox" 
+        [(ngModel)]="task.isCompleted" 
+        (change)="toggleTask(task)"
+        class="task-checkbox"
+      >
+      <div class="task-content">
+        <span class="task-title" [class.completed]="task.isCompleted">
+          {{ task.title }}
+        </span>
+        <small class="task-date">
+          {{ task.createdAt | date:'medium' }}
+        </small>
+      </div>
+    </div>
+  </div>
+  
+  <div class="empty-state" *ngIf="tasks.length === 0">
+    <h3>No tasks yet</h3>
+    <p>Add your first task to get started!</p>
+  </div>
+</div>
