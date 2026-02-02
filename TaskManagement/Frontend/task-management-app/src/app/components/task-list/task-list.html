@@ -10,10 +10,20 @@
       placeholder="Enter task title"
       class="task-input"
     >
-    <button (click)="addTask()" class="add-btn">Add Task</button>
+    <button (click)="addTask()" class="add-btn" [disabled]="isLoading">Add Task</button>
+  </div>
+
+  <!-- Error message display -->
+  <div class="error-message" *ngIf="errorMessage">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Loading indicator -->
+  <div class="loading" *ngIf="isLoading">
+    Loading tasks...
   </div>
   
-  <div class="tasks-list" *ngIf="tasks.length > 0">
+  <div class="tasks-list" *ngIf="tasks.length > 0 && !isLoading">
     <div *ngFor="let task of tasks" class="task-item">
       <input 
         type="checkbox" 
@@ -32,7 +42,7 @@
     </div>
   </div>
   
-  <div class="empty-state" *ngIf="tasks.length === 0">
+  <div class="empty-state" *ngIf="tasks.length === 0 && !isLoading && !errorMessage">
     <h3>No tasks yet</h3>
     <p>Add your first task to get started!</p>
   </div>
