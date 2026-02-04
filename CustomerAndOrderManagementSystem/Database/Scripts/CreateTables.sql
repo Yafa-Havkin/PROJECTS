@@ -1,0 +1,16 @@
+-- SQLite Database Schema
+
+CREATE TABLE IF NOT EXISTS Customers (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL,
+    Email TEXT NOT NULL,
+    Phone TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Orders (
+    OrderId INTEGER PRIMARY KEY AUTOINCREMENT,
+    CustomerId INTEGER NOT NULL,
+    OrderDate TEXT NOT NULL,
+    TotalAmount REAL NOT NULL,
+    FOREIGN KEY (CustomerId) REFERENCES Customers(Id)
+);
