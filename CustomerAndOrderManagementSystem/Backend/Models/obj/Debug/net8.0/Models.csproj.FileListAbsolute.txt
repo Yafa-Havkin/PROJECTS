@@ -10,3 +10,15 @@ h:\NodeJs\finalProject\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug
 h:\NodeJs\finalProject\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\refint\Models.dll
 h:\NodeJs\finalProject\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\Models.pdb
 h:\NodeJs\finalProject\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\ref\Models.dll
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\bin\Debug\net8.0\Models.deps.json
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\bin\Debug\net8.0\Models.dll
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\bin\Debug\net8.0\Models.pdb
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\Models.AssemblyInfoInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\Models.AssemblyInfo.cs
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\Models.csproj.CoreCompileInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\Models.sourcelink.json
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\Models.dll
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\refint\Models.dll
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\Models.pdb
+C:\יפי\לימודים\ו\PROJECTS\CustomerAndOrderManagementSystem\Backend\Models\obj\Debug\net8.0\ref\Models.dll
