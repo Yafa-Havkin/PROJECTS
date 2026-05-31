@@ -1,0 +1,40 @@
+.header {
+    padding: 6px 12px;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #ddd;
+    direction: ltr;
+}
+
+.header-select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    font-size: 13px;
+    min-width: 130px;
+}
+
+.btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-blue   { background: #3b82f6; }
+.btn-green  { background: #22c55e; }
+.btn-yellow { background: #f59e0b; }
+.btn-cyan   { background: #06b6d4; }
+.btn-red    { background: #ef4444; }
+.btn-purple { background: #a855f7; }

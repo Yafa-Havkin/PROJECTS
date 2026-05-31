@@ -8,7 +8,7 @@ import { Order } from '../models/order.model';
 })
 export class OrderService {
   // כתובת ה-API שלך להזמנות
-  private apiUrl = 'https://localhost:7000/api/orders'; 
+  private apiUrl = 'http://localhost:5000/api/orders'; 
 
   constructor(private http: HttpClient) {}
 

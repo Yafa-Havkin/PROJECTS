@@ -1,0 +1,23 @@
+<div class="app-container">
+  <nav class="navbar">
+    <div class="nav-brand">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="nav-links">
+      <div class="nav-section">
+        <span class="nav-title">Employee</span>
+        <a routerLink="/employee/current-loans" routerLinkActive="active">Current Loans</a>
+        <a routerLink="/employee/loan-history" routerLinkActive="active">Loan History</a>
+      </div>
+      <div class="nav-section">
+        <span class="nav-title">Manager</span>
+        <a routerLink="/equipment" routerLinkActive="active">Equipment</a>
+        <a routerLink="/loans/active" routerLinkActive="active">Active Loans</a>
+      </div>
+    </div>
+  </nav>
+  
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

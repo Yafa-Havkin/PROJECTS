@@ -1,5 +1,7 @@
 using DAL;
 using DAL.Interfaces;
+using BLL.Interfaces;
+using BLL.Services;
 using API.Middleware;
 using FluentValidation;
 using API.Validators;
@@ -15,6 +17,9 @@ builder.Services.AddSwaggerGen();
 // Add FluentValidation
 builder.Services.AddScoped<IValidator<Customer>, CustomerValidator>();
 builder.Services.AddScoped<IValidator<Order>, OrderValidator>();
+
+// Register BLL Services
+builder.Services.AddScoped<ICustomerService, CustomerService>();
 
 // Register database connection factory
 builder.Services.AddScoped<IDbConnectionFactory, DbConnectionFactory>();
@@ -43,8 +48,8 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Configure the HTTP request pipeline
-app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseMiddleware<GlobalExceptionMiddleware>();
+app.UseMiddleware<RequestLoggingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {

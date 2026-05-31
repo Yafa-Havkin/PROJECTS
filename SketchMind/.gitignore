@@ -1,0 +1,33 @@
+# Visual Studio system files
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+
+# SQL scripts
+*.sql
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Sensitive config
+appsettings.json
+appsettings.Development.json
+מפתח API.txt
+
+# Node
+node_modules/
+dist/
+
+# Media
+*.mp4
+*.avi
+*.mov
+
+# Other projects
+CustomerAndOrderManagementSystem/
+NodeJsBackend/
+ServiceRequestSystem/
+TaskManagement/

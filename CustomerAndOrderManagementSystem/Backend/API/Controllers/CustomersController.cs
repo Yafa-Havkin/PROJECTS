@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using DAL.Interfaces;
+using BLL.Interfaces;
 using Models;
 using FluentValidation;
 
@@ -9,19 +9,19 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class CustomersController : ControllerBase
     {
-        private readonly ICustomerRepository _customerRepository;
+        private readonly ICustomerService _customerService;
         private readonly IValidator<Customer> _validator;
 
-        public CustomersController(ICustomerRepository customerRepository, IValidator<Customer> validator)
+        public CustomersController(ICustomerService customerService, IValidator<Customer> validator)
         {
-            _customerRepository = customerRepository;
+            _customerService = customerService;
             _validator = validator;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllCustomers()
         {
-            var customers = await _customerRepository.GetAllCustomersAsync();
+            var customers = await _customerService.GetAllCustomersAsync();
             return Ok(customers);
         }
 
@@ -34,14 +34,14 @@ namespace API.Controllers
                 throw new ArgumentException($"Validation failed: {string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage))}");
             }
 
-            var createdCustomer = await _customerRepository.CreateCustomerAsync(customer);
+            var createdCustomer = await _customerService.CreateCustomerAsync(customer);
             return CreatedAtAction(nameof(GetAllCustomers), new { id = createdCustomer.Id }, createdCustomer);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCustomer(int id, [FromBody] Customer customer)
         {
-            var updated = await _customerRepository.UpdateCustomerAsync(id, customer);
+            var updated = await _customerService.UpdateCustomerAsync(id, customer);
             if (!updated)
             {
                 throw new KeyNotFoundException($"Customer with ID {id} not found");
@@ -52,7 +52,7 @@ namespace API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCustomer(int id)
         {
-            var deleted = await _customerRepository.DeleteCustomerAsync(id);
+            var deleted = await _customerService.DeleteCustomerAsync(id);
             if (!deleted)
             {
                 throw new KeyNotFoundException($"Customer with ID {id} not found");

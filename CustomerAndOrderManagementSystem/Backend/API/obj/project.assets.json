@@ -1006,7 +1006,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\חבקין\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1014,11 +1014,11 @@
       "projectUniqueName": "C:\\יפי\\לימודים\\ו\\PROJECTS\\CustomerAndOrderManagementSystem\\Backend\\API\\API.csproj",
       "projectName": "API",
       "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\CustomerAndOrderManagementSystem\\Backend\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\חבקין\\.nuget\\packages\\",
       "outputPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\CustomerAndOrderManagementSystem\\Backend\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\חבקין\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

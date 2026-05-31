@@ -1,0 +1,35 @@
+<div class="active-loans-container">
+  <div class="header">
+    <h2>Active Loans</h2>
+    <button class="btn-add" routerLink="/loans/create">Create Loan</button>
+  </div>
+
+  <div *ngIf="loans.length === 0" class="no-loans">
+    <p>No active loans</p>
+  </div>
+
+  <table *ngIf="loans.length > 0" class="loans-table">
+    <thead>
+      <tr>
+        <th>Equipment</th>
+        <th>Employee</th>
+        <th>Manager</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let loan of loans">
+        <td>{{ loan.equipmentName }}</td>
+        <td>{{ loan.employeeName }}</td>
+        <td>{{ loan.managerName }}</td>
+        <td>{{ loan.status }}</td>
+        <td>
+          <button class="btn-return" (click)="returnLoan(loan.id)">
+            Return
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

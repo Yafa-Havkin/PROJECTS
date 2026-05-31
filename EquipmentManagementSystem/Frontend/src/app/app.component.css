@@ -1,0 +1,67 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-brand h1 {
+  margin: 0 0 20px 0;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-title {
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-right: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 30px;
+}

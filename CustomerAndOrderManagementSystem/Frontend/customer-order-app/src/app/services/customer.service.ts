@@ -8,7 +8,7 @@ import { Customer } from '../models/customer.model';
 })
 export class CustomerService {
   // שנה את הכתובת לכתובת ה-API האמיתית שלך
-  private apiUrl = 'https://localhost:7000/api/customers'; 
+  private apiUrl = 'http://localhost:5000/api/customers'; 
 
   constructor(private http: HttpClient) {}
 

@@ -1,0 +1,24 @@
+<div class="current-loans-container">
+  <h2>Current Loans</h2>
+
+  <div *ngIf="loans.length === 0" class="no-loans">
+    <p>No current loans</p>
+  </div>
+
+  <table *ngIf="loans.length > 0" class="loans-table">
+    <thead>
+      <tr>
+        <th>Equipment Name</th>
+        <th>Status</th>
+        <th>Approved By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let loan of loans">
+        <td>{{ loan.equipmentName }}</td>
+        <td>{{ loan.status }}</td>
+        <td>{{ loan.managerName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,29 @@
+<div class="equipment-list-container">
+  <div class="header">
+    <h2>Equipment List</h2>
+    <button class="btn-add" routerLink="/equipment/add">Add Equipment</button>
+  </div>
+
+  <div *ngIf="equipment.length === 0" class="no-equipment">
+    <p>No equipment found</p>
+  </div>
+
+  <table *ngIf="equipment.length > 0" class="equipment-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Available for Loan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of equipment">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.status }}</td>
+        <td>{{ item.isAvailableForLoan ? 'Yes' : 'No' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

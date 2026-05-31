@@ -105,6 +105,18 @@ namespace DAL
             using var connection = (SqliteConnection)_connectionFactory.CreateConnection();
             await connection.OpenAsync();
             
+            // Cascade Delete - קודם מוחקים את ההזמנות
+            using var deleteOrdersCmd = connection.CreateCommand();
+            deleteOrdersCmd.CommandText = "DELETE FROM Orders WHERE CustomerId = @customerId";
+            
+            var customerIdParam = deleteOrdersCmd.CreateParameter();
+            customerIdParam.ParameterName = "@customerId";
+            customerIdParam.Value = id;
+            deleteOrdersCmd.Parameters.Add(customerIdParam);
+            
+            await deleteOrdersCmd.ExecuteNonQueryAsync();
+            
+            // אחר כך מוחקים את הלקוח
             using var command = connection.CreateCommand();
             command.CommandText = "DELETE FROM Customers WHERE Id = @id";
             
