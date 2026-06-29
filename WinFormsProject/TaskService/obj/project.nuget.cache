@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "FH/StFKdsWU=",
+  "success": true,
+  "projectFilePath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\WinFormsProject\\TaskService\\TaskService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.objectpool\\6.0.16\\microsoft.extensions.objectpool.6.0.16.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.1\\system.security.cryptography.pkcs.6.0.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.security.cryptography.xml\\6.0.1\\system.security.cryptography.xml.6.0.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.http\\8.0.0\\system.servicemodel.http.8.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.primitives\\8.0.0\\system.servicemodel.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'System.Security.Cryptography.Pkcs' 6.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-555c-2p6r-68mm",
+      "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\WinFormsProject\\TaskService\\TaskService.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\WinFormsProject\\TaskService\\TaskService.csproj",
+      "libraryId": "System.Security.Cryptography.Pkcs",
+      "targetGraphs": [
+        "net10.0-windows"
+      ]
+    }
+  ]
+}

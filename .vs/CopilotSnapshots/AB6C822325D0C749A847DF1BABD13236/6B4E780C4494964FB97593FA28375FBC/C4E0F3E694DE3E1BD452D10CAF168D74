@@ -1,0 +1,312 @@
+﻿namespace TaskClientApp
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            headerPanel = new Panel();
+            lblTitle = new Label();
+            lblSubtitle = new Label();
+            rentalInputPanel = new Panel();
+            lblCarModel = new Label();
+            txtCarModel = new TextBox();
+            lblRenterName = new Label();
+            txtRenterName = new TextBox();
+            lblRentalDays = new Label();
+            numRentalDays = new NumericUpDown();
+            lblDailyRate = new Label();
+            txtDailyRate = new TextBox();
+            btnAddRental = new Button();
+            lstRentals = new ListBox();
+            statusPanel = new Panel();
+            lblStatus = new Label();
+            dataGridView1 = new DataGridView();
+            btnClearForm = new Button();
+            headerPanel.SuspendLayout();
+            rentalInputPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numRentalDays).BeginInit();
+            statusPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
+            // 
+            // headerPanel
+            // 
+            headerPanel.BackColor = Color.FromArgb(11, 61, 107);
+            headerPanel.Controls.Add(lblSubtitle);
+            headerPanel.Controls.Add(lblTitle);
+            headerPanel.Dock = DockStyle.Top;
+            headerPanel.Location = new Point(0, 0);
+            headerPanel.Name = "headerPanel";
+            headerPanel.Size = new Size(1000, 80);
+            headerPanel.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            lblTitle.ForeColor = Color.White;
+            lblTitle.Location = new Point(20, 15);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(350, 45);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "🚗 נוכל להשכיר רכבים";
+            // 
+            // lblSubtitle
+            // 
+            lblSubtitle.AutoSize = true;
+            lblSubtitle.Font = new Font("Segoe UI", 11F);
+            lblSubtitle.ForeColor = Color.LightGray;
+            lblSubtitle.Location = new Point(20, 50);
+            lblSubtitle.Name = "lblSubtitle";
+            lblSubtitle.Size = new Size(200, 20);
+            lblSubtitle.TabIndex = 1;
+            lblSubtitle.Text = "מערכת ניהול השכרת רכבים חכמה";
+            // 
+            // rentalInputPanel
+            // 
+            rentalInputPanel.BackColor = Color.White;
+            rentalInputPanel.BorderStyle = BorderStyle.FixedSingle;
+            rentalInputPanel.Controls.Add(btnClearForm);
+            rentalInputPanel.Controls.Add(btnAddRental);
+            rentalInputPanel.Controls.Add(txtDailyRate);
+            rentalInputPanel.Controls.Add(lblDailyRate);
+            rentalInputPanel.Controls.Add(numRentalDays);
+            rentalInputPanel.Controls.Add(lblRentalDays);
+            rentalInputPanel.Controls.Add(txtRenterName);
+            rentalInputPanel.Controls.Add(lblRenterName);
+            rentalInputPanel.Controls.Add(txtCarModel);
+            rentalInputPanel.Controls.Add(lblCarModel);
+            rentalInputPanel.Location = new Point(20, 100);
+            rentalInputPanel.Name = "rentalInputPanel";
+            rentalInputPanel.Size = new Size(350, 330);
+            rentalInputPanel.TabIndex = 1;
+            // 
+            // lblCarModel
+            // 
+            lblCarModel.AutoSize = true;
+            lblCarModel.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblCarModel.ForeColor = Color.FromArgb(11, 61, 107);
+            lblCarModel.Location = new Point(15, 20);
+            lblCarModel.Name = "lblCarModel";
+            lblCarModel.Size = new Size(90, 19);
+            lblCarModel.TabIndex = 0;
+            lblCarModel.Text = "דגם הרכב:";
+            // 
+            // txtCarModel
+            // 
+            txtCarModel.BorderStyle = BorderStyle.FixedSingle;
+            txtCarModel.Font = new Font("Segoe UI", 10F);
+            txtCarModel.Location = new Point(15, 42);
+            txtCarModel.Name = "txtCarModel";
+            txtCarModel.PlaceholderText = "לדוגמה: Toyota Corolla";
+            txtCarModel.Size = new Size(320, 25);
+            txtCarModel.TabIndex = 1;
+            // 
+            // lblRenterName
+            // 
+            lblRenterName.AutoSize = true;
+            lblRenterName.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblRenterName.ForeColor = Color.FromArgb(11, 61, 107);
+            lblRenterName.Location = new Point(15, 80);
+            lblRenterName.Name = "lblRenterName";
+            lblRenterName.Size = new Size(95, 19);
+            lblRenterName.TabIndex = 2;
+            lblRenterName.Text = "שם השוכר:";
+            // 
+            // txtRenterName
+            // 
+            txtRenterName.BorderStyle = BorderStyle.FixedSingle;
+            txtRenterName.Font = new Font("Segoe UI", 10F);
+            txtRenterName.Location = new Point(15, 102);
+            txtRenterName.Name = "txtRenterName";
+            txtRenterName.PlaceholderText = "הכנס את שם הלקוח";
+            txtRenterName.Size = new Size(320, 25);
+            txtRenterName.TabIndex = 3;
+            // 
+            // lblRentalDays
+            // 
+            lblRentalDays.AutoSize = true;
+            lblRentalDays.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblRentalDays.ForeColor = Color.FromArgb(11, 61, 107);
+            lblRentalDays.Location = new Point(15, 140);
+            lblRentalDays.Name = "lblRentalDays";
+            lblRentalDays.Size = new Size(95, 19);
+            lblRentalDays.TabIndex = 4;
+            lblRentalDays.Text = "מספר ימים:";
+            // 
+            // numRentalDays
+            // 
+            numRentalDays.BorderStyle = BorderStyle.FixedSingle;
+            numRentalDays.Font = new Font("Segoe UI", 10F);
+            numRentalDays.Location = new Point(15, 162);
+            numRentalDays.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numRentalDays.Name = "numRentalDays";
+            numRentalDays.Size = new Size(320, 25);
+            numRentalDays.TabIndex = 5;
+            numRentalDays.Value = new decimal(new int[] { 3, 0, 0, 0 });
+            // 
+            // lblDailyRate
+            // 
+            lblDailyRate.AutoSize = true;
+            lblDailyRate.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblDailyRate.ForeColor = Color.FromArgb(11, 61, 107);
+            lblDailyRate.Location = new Point(15, 200);
+            lblDailyRate.Name = "lblDailyRate";
+            lblDailyRate.Size = new Size(103, 19);
+            lblDailyRate.TabIndex = 6;
+            lblDailyRate.Text = "עלות ליום (₪):";
+            // 
+            // txtDailyRate
+            // 
+            txtDailyRate.BorderStyle = BorderStyle.FixedSingle;
+            txtDailyRate.Font = new Font("Segoe UI", 10F);
+            txtDailyRate.Location = new Point(15, 222);
+            txtDailyRate.Name = "txtDailyRate";
+            txtDailyRate.PlaceholderText = "לדוגמה: 150";
+            txtDailyRate.Size = new Size(320, 25);
+            txtDailyRate.TabIndex = 7;
+            // 
+            // btnAddRental
+            // 
+            btnAddRental.BackColor = Color.FromArgb(34, 139, 34);
+            btnAddRental.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnAddRental.ForeColor = Color.White;
+            btnAddRental.Location = new Point(15, 265);
+            btnAddRental.Name = "btnAddRental";
+            btnAddRental.Size = new Size(150, 40);
+            btnAddRental.TabIndex = 8;
+            btnAddRental.Text = "➕ הוסף הסכם";
+            btnAddRental.UseVisualStyleBackColor = false;
+            btnAddRental.Click += button1_Click;
+            // 
+            // btnClearForm
+            // 
+            btnClearForm.BackColor = Color.FromArgb(192, 192, 192);
+            btnClearForm.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnClearForm.ForeColor = Color.Black;
+            btnClearForm.Location = new Point(185, 265);
+            btnClearForm.Name = "btnClearForm";
+            btnClearForm.Size = new Size(150, 40);
+            btnClearForm.TabIndex = 9;
+            btnClearForm.Text = "🗑️ נקה";
+            btnClearForm.UseVisualStyleBackColor = false;
+            btnClearForm.Click += btnClearForm_Click;
+            // 
+            // lstRentals
+            // 
+            lstRentals.BorderStyle = BorderStyle.FixedSingle;
+            lstRentals.Font = new Font("Segoe UI", 9F);
+            lstRentals.Location = new Point(20, 450);
+            lstRentals.Name = "lstRentals";
+            lstRentals.Size = new Size(350, 100);
+            lstRentals.TabIndex = 2;
+            // 
+            // statusPanel
+            // 
+            statusPanel.BackColor = Color.FromArgb(240, 248, 255);
+            statusPanel.BorderStyle = BorderStyle.FixedSingle;
+            statusPanel.Controls.Add(lblStatus);
+            statusPanel.Location = new Point(390, 100);
+            statusPanel.Name = "statusPanel";
+            statusPanel.Size = new Size(590, 60);
+            statusPanel.TabIndex = 3;
+            // 
+            // lblStatus
+            // 
+            lblStatus.AutoSize = true;
+            lblStatus.Font = new Font("Segoe UI", 11F);
+            lblStatus.ForeColor = Color.FromArgb(11, 61, 107);
+            lblStatus.Location = new Point(10, 15);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(150, 20);
+            lblStatus.TabIndex = 0;
+            lblStatus.Text = "✅ מערכת מוכנה לעבודה";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.BorderStyle = BorderStyle.FixedSingle;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = DockStyle.None;
+            dataGridView1.Location = new Point(390, 180);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(590, 370);
+            dataGridView1.TabIndex = 4;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(245, 245, 245);
+            ClientSize = new Size(1000, 600);
+            Controls.Add(dataGridView1);
+            Controls.Add(statusPanel);
+            Controls.Add(lstRentals);
+            Controls.Add(rentalInputPanel);
+            Controls.Add(headerPanel);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximumSize = new Size(1000, 600);
+            MinimumSize = new Size(1000, 600);
+            Name = "Form1";
+            Text = "💼 מערכת השכרת רכבים";
+            headerPanel.ResumeLayout(false);
+            headerPanel.PerformLayout();
+            rentalInputPanel.ResumeLayout(false);
+            rentalInputPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numRentalDays).EndInit();
+            statusPanel.ResumeLayout(false);
+            statusPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Panel headerPanel;
+        private Label lblTitle;
+        private Label lblSubtitle;
+        private Panel rentalInputPanel;
+        private Label lblCarModel;
+        private TextBox txtCarModel;
+        private Label lblRenterName;
+        private TextBox txtRenterName;
+        private Label lblRentalDays;
+        private NumericUpDown numRentalDays;
+        private Label lblDailyRate;
+        private TextBox txtDailyRate;
+        private Button btnAddRental;
+        private Button btnClearForm;
+        private ListBox lstRentals;
+        private Panel statusPanel;
+        private Label lblStatus;
+        private DataGridView dataGridView1;
+    }
+}

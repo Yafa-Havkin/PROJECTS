@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "P2HkZXxRY8E=",
+  "success": true,
+  "projectFilePath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\WinFormsProject\\TaskClientApp\\TaskClientApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.objectpool\\6.0.16\\microsoft.extensions.objectpool.6.0.16.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.http\\8.0.0\\system.servicemodel.http.8.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.primitives\\8.0.0\\system.servicemodel.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
