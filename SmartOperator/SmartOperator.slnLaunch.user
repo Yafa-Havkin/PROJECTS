@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "CommandCenterUI\\CommandCenterUI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ServiceHostManager\\ServiceHostManager.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

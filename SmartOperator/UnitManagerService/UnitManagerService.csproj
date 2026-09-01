@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Http" Version="10.0.652802" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="10.0.652802" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\ThreatAnalysisService\ThreatAnalysisService.csproj" />
+  </ItemGroup>
+
+</Project>

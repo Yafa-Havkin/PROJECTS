@@ -1,0 +1,17 @@
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net10.0\ThreatAnalysisService.dll.config
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net10.0\ThreatAnalysisService.deps.json
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net10.0\ThreatAnalysisService.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net10.0\ThreatAnalysisService.pdb
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net10.0\Common.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net10.0\Common.pdb
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAnalysisService.csproj.AssemblyReference.cache
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAnalysisService.GeneratedMSBuildEditorConfig.editorconfig
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAnalysisService.AssemblyInfoInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAnalysisService.AssemblyInfo.cs
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAnalysisService.csproj.CoreCompileInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAnalysisService.sourcelink.json
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAn.EBE73A4C.Up2Date
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAnalysisService.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\refint\ThreatAnalysisService.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ThreatAnalysisService.pdb
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net10.0\ref\ThreatAnalysisService.dll

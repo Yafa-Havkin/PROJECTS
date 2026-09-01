@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="CommandCenterUI/CommandCenterUI.csproj" Id="433a6e72-a5d3-4875-a2ca-632e3caa03b3" />
+  <Project Path="Common/Common.csproj" Id="c03a4eb7-1704-440f-a5eb-e77ffb9e6f8a" />
+  <Project Path="ServiceHostManager/ServiceHostManager.csproj" Id="93c85fb4-1ef5-463c-85ca-28710e6de72e" />
+  <Project Path="ThreatAnalysisService/ThreatAnalysisService.csproj" />
+  <Project Path="UnitManagerService/UnitManagerService.csproj" />
+</Solution>

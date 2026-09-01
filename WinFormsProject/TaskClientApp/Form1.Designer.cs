@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             headerPanel = new Panel();
-            lblTitle = new Label();
             lblSubtitle = new Label();
+            lblTitle = new Label();
             rentalInputPanel = new Panel();
-            lblCarModel = new Label();
-            txtTitle = new TextBox();
-            lblRenterName = new Label();
-            txtDescription = new TextBox();
-            label1 = new Label();
             button1 = new Button();
-            lstRentals = new ListBox();
+            txtDescription = new TextBox();
+            lblRenterName = new Label();
+            txtTitle = new TextBox();
+            lblCarModel = new Label();
+            label1 = new Label();
             statusPanel = new Panel();
             lblStatus = new Label();
             dataGridView1 = new DataGridView();
@@ -64,7 +63,7 @@
             lblSubtitle.AutoSize = true;
             lblSubtitle.Font = new Font("Segoe UI", 11F);
             lblSubtitle.ForeColor = Color.LightGray;
-            lblSubtitle.Location = new Point(20, 50);
+            lblSubtitle.Location = new Point(626, 43);
             lblSubtitle.Name = "lblSubtitle";
             lblSubtitle.Size = new Size(340, 30);
             lblSubtitle.TabIndex = 1;
@@ -92,7 +91,7 @@
             rentalInputPanel.Controls.Add(lblCarModel);
             rentalInputPanel.Location = new Point(20, 100);
             rentalInputPanel.Name = "rentalInputPanel";
-            rentalInputPanel.Size = new Size(350, 330);
+            rentalInputPanel.Size = new Size(350, 406);
             rentalInputPanel.TabIndex = 1;
             // 
             // button1
@@ -100,11 +99,11 @@
             button1.BackColor = Color.FromArgb(34, 139, 34);
             button1.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(15, 265);
+            button1.Location = new Point(15, 347);
             button1.Name = "button1";
             button1.Size = new Size(320, 40);
             button1.TabIndex = 8;
-            button1.Text = "➕ הוסף הסכם";
+            button1.Text = "הוסף משימה";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -112,7 +111,7 @@
             // 
             txtDescription.BorderStyle = BorderStyle.FixedSingle;
             txtDescription.Font = new Font("Segoe UI", 10F);
-            txtDescription.Location = new Point(15, 102);
+            txtDescription.Location = new Point(15, 147);
             txtDescription.Name = "txtDescription";
             txtDescription.PlaceholderText = "הכנס את שם הלקוח";
             txtDescription.Size = new Size(320, 34);
@@ -123,21 +122,22 @@
             lblRenterName.AutoSize = true;
             lblRenterName.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             lblRenterName.ForeColor = Color.FromArgb(11, 61, 107);
-            lblRenterName.Location = new Point(15, 80);
+            lblRenterName.Location = new Point(15, 100);
             lblRenterName.Name = "lblRenterName";
-            lblRenterName.Size = new Size(113, 28);
+            lblRenterName.Size = new Size(56, 28);
             lblRenterName.TabIndex = 2;
-            lblRenterName.Text = "שם השוכר:";
+            lblRenterName.Text = "תוכן:";
             // 
             // txtTitle
             // 
             txtTitle.BorderStyle = BorderStyle.FixedSingle;
             txtTitle.Font = new Font("Segoe UI", 10F);
-            txtTitle.Location = new Point(15, 42);
+            txtTitle.Location = new Point(15, 63);
             txtTitle.Name = "txtTitle";
             txtTitle.PlaceholderText = "לדוגמה: Toyota Corolla";
             txtTitle.Size = new Size(320, 34);
             txtTitle.TabIndex = 1;
+            txtTitle.TextChanged += txtTitle_TextChanged;
             // 
             // lblCarModel
             // 
@@ -146,18 +146,16 @@
             lblCarModel.ForeColor = Color.FromArgb(11, 61, 107);
             lblCarModel.Location = new Point(15, 20);
             lblCarModel.Name = "lblCarModel";
-            lblCarModel.Size = new Size(108, 28);
+            lblCarModel.Size = new Size(156, 28);
             lblCarModel.TabIndex = 0;
-            lblCarModel.Text = "דגם הרכב:";
+            lblCarModel.Text = "כותרת המשימה";
             // 
-            // lstRentals
+            // label1
             // 
-            lstRentals.BorderStyle = BorderStyle.FixedSingle;
-            lstRentals.Font = new Font("Segoe UI", 9F);
-            lstRentals.Location = new Point(20, 450);
-            lstRentals.Name = "lstRentals";
-            lstRentals.Size = new Size(350, 77);
-            lstRentals.TabIndex = 2;
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(100, 23);
+            label1.TabIndex = 0;
             // 
             // statusPanel
             // 
@@ -202,7 +200,6 @@
             ClientSize = new Size(978, 544);
             Controls.Add(dataGridView1);
             Controls.Add(statusPanel);
-            Controls.Add(lstRentals);
             Controls.Add(rentalInputPanel);
             Controls.Add(headerPanel);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -231,7 +228,6 @@
         private Label lblRenterName;
         private TextBox txtDescription;
         private Button button1;
-        private ListBox lstRentals;
         private Panel statusPanel;
         private Label lblStatus;
         private DataGridView dataGridView1;

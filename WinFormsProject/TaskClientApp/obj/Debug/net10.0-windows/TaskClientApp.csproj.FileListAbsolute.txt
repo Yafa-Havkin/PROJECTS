@@ -48,3 +48,4 @@ C:\יפי\לימודים\ו\PROJECTS\WinFormsProject\TaskClientApp\obj\Debug\net
 C:\יפי\לימודים\ו\PROJECTS\WinFormsProject\TaskClientApp\obj\Debug\net10.0-windows\TaskClientApp.pdb
 C:\יפי\לימודים\ו\PROJECTS\WinFormsProject\TaskClientApp\obj\Debug\net10.0-windows\TaskClientApp.genruntimeconfig.cache
 C:\יפי\לימודים\ו\PROJECTS\WinFormsProject\TaskClientApp\obj\Debug\net10.0-windows\ref\TaskClientApp.dll
+C:\יפי\לימודים\ו\PROJECTS\WinFormsProject\TaskClientApp\bin\Debug\net10.0-windows\TaskService.dll.config

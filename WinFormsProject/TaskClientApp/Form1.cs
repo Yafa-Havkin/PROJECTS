@@ -47,5 +47,15 @@ namespace TaskClientApp
         {
 
         }
+
+        private void lstRentals_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

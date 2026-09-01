@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\interfaces\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|solutionrelative:taskservice\\interfaces\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskclientapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|solutionrelative:taskclientapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskclientapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|solutionrelative:taskclientapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80E5E69F-6978-40D0-9CA8-3102E21316EA}|TaskClientApp\\TaskClientApp.csproj|C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\taskclientapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{80E5E69F-6978-40D0-9CA8-3102E21316EA}|TaskClientApp\\TaskClientApp.csproj|solutionrelative:taskclientapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskclientapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|solutionrelative:taskclientapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|solutionrelative:taskservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\taskservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|solutionrelative:taskservice\\taskservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\interfaces\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|solutionrelative:taskservice\\interfaces\\iservice1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\services\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|solutionrelative:taskservice\\services\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\wcf service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|solutionrelative:taskservice\\wcf service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskclientapp\\taskclientapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -21,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskclientapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4A1DADE-EFD8-4100-9F6E-44C049BEF88E}|TaskClientApp\\TaskClientApp.csproj|solutionrelative:taskclientapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\services\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|solutionrelative:taskservice\\services\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\taskservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|solutionrelative:taskservice\\taskservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DB1DF5E-361B-DE1E-B098-0C03A1AECAC0}|TaskService\\TaskService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\winformsproject\\taskservice\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +54,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.cs",
+              "RelativeDocumentMoniker": "TaskClientApp\\Form1.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.cs [Design]",
+              "RelativeToolTip": "TaskClientApp\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T18:07:03.045Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\App.config",
+              "RelativeDocumentMoniker": "TaskService\\App.config",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\App.config",
+              "RelativeToolTip": "TaskService\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-29T18:04:01.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WCF Service.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\WCF Service.cs",
+              "RelativeDocumentMoniker": "TaskService\\WCF Service.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\WCF Service.cs",
+              "RelativeToolTip": "TaskService\\WCF Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T17:35:33.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.cs",
               "RelativeDocumentMoniker": "TaskClientApp\\Form1.cs",
@@ -57,68 +107,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.cs",
               "RelativeDocumentMoniker": "TaskClientApp\\Form1.cs",
               "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.cs",
               "RelativeToolTip": "TaskClientApp\\Form1.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAtwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T09:40:41.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TaskClientApp.csproj",
-              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\TaskClientApp.csproj",
-              "RelativeDocumentMoniker": "TaskClientApp\\TaskClientApp.csproj",
-              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\TaskClientApp.csproj",
-              "RelativeToolTip": "TaskClientApp\\TaskClientApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-29T09:32:11.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IService1.cs",
-              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Interfaces\\IService1.cs",
-              "RelativeDocumentMoniker": "TaskService\\Interfaces\\IService1.cs",
-              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Interfaces\\IService1.cs",
-              "RelativeToolTip": "TaskService\\Interfaces\\IService1.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T08:19:34.382Z",
+              "WhenOpened": "2026-06-29T09:40:41.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "TaskClientApp\\Form1.Designer.cs",
-              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.Designer.cs",
-              "RelativeToolTip": "TaskClientApp\\Form1.Designer.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAqwIwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T11:19:33.643Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Service1.cs",
-              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Services\\Service1.cs",
-              "RelativeDocumentMoniker": "TaskService\\Services\\Service1.cs",
-              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Services\\Service1.cs",
-              "RelativeToolTip": "TaskService\\Services\\Service1.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAcwCUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T08:44:08.369Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "TaskService.csproj",
               "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\TaskService.csproj",
               "RelativeDocumentMoniker": "TaskService\\TaskService.csproj",
@@ -126,11 +128,64 @@
               "RelativeToolTip": "TaskService\\TaskService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-29T08:03:31.642Z"
+              "WhenOpened": "2026-06-29T08:03:31.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "Service1.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Services\\Service1.cs",
+              "RelativeDocumentMoniker": "TaskService\\Services\\Service1.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Services\\Service1.cs",
+              "RelativeToolTip": "TaskService\\Services\\Service1.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T08:44:08.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IService1.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Interfaces\\IService1.cs",
+              "RelativeDocumentMoniker": "TaskService\\Interfaces\\IService1.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Interfaces\\IService1.cs",
+              "RelativeToolTip": "TaskService\\Interfaces\\IService1.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T08:19:34.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TaskClientApp.csproj",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\TaskClientApp.csproj",
+              "RelativeDocumentMoniker": "TaskClientApp\\TaskClientApp.csproj",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\TaskClientApp.csproj",
+              "RelativeToolTip": "TaskClientApp\\TaskClientApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-29T09:32:11.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "TaskClientApp\\Form1.Designer.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskClientApp\\Form1.Designer.cs",
+              "RelativeToolTip": "TaskClientApp\\Form1.Designer.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAqwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T11:19:33.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\WinFormsProject\\TaskService\\Class1.cs",
               "RelativeDocumentMoniker": "TaskService\\Class1.cs",

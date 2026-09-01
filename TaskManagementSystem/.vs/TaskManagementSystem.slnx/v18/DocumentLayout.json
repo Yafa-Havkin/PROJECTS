@@ -1,0 +1,115 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2234D47B-5962-48BE-AAE5-7CE4227C79DA}|TaskManagement.Api\\TaskManagement.Api.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\taskmanagementsystem\\taskmanagement.api\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2234D47B-5962-48BE-AAE5-7CE4227C79DA}|TaskManagement.Api\\TaskManagement.Api.csproj|solutionrelative:taskmanagement.api\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1FBE6-EE05-4BEE-8451-36891D21C1B2}|TaskManagement.Shared\\TaskManagement.Shared.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\taskmanagementsystem\\taskmanagement.shared\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1FBE6-EE05-4BEE-8451-36891D21C1B2}|TaskManagement.Shared\\TaskManagement.Shared.csproj|solutionrelative:taskmanagement.shared\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1FBE6-EE05-4BEE-8451-36891D21C1B2}|TaskManagement.Shared\\TaskManagement.Shared.csproj|C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\taskmanagement.shared\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1FBE6-EE05-4BEE-8451-36891D21C1B2}|TaskManagement.Shared\\TaskManagement.Shared.csproj|solutionrelative:taskmanagement.shared\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45D1FBE6-EE05-4BEE-8451-36891D21C1B2}|TaskManagement.Shared\\TaskManagement.Shared.csproj|C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\taskmanagement.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45D1FBE6-EE05-4BEE-8451-36891D21C1B2}|TaskManagement.Shared\\TaskManagement.Shared.csproj|solutionrelative:taskmanagement.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D32540-6386-473B-893C-118569A3C57E}|TaskManagementSystem.clayent\\TaskManagementSystem.clayent.csproj|C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\taskmanagementsystem.clayent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83D32540-6386-473B-893C-118569A3C57E}|TaskManagementSystem.clayent\\TaskManagementSystem.clayent.csproj|solutionrelative:taskmanagementsystem.clayent\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagement.Api\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "TaskManagement.Api\\Controllers\\TasksController.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagement.Api\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "TaskManagement.Api\\Controllers\\TasksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T13:20:18.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagement.Shared\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "TaskManagement.Shared\\Models\\Task.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagement.Shared\\Models\\Task.cs",
+              "RelativeToolTip": "TaskManagement.Shared\\Models\\Task.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T12:44:36.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagement.Shared\\Enums\\Status.cs",
+              "RelativeDocumentMoniker": "TaskManagement.Shared\\Enums\\Status.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagement.Shared\\Enums\\Status.cs",
+              "RelativeToolTip": "TaskManagement.Shared\\Enums\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T11:59:27.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagement.Shared\\Class1.cs",
+              "RelativeDocumentMoniker": "TaskManagement.Shared\\Class1.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagement.Shared\\Class1.cs",
+              "RelativeToolTip": "TaskManagement.Shared\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T11:58:26.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagementSystem.clayent\\Form1.cs",
+              "RelativeDocumentMoniker": "TaskManagementSystem.clayent\\Form1.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\TaskManagementSystem\\TaskManagementSystem.clayent\\Form1.cs [Design]",
+              "RelativeToolTip": "TaskManagementSystem.clayent\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T11:57:44.467Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 288,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

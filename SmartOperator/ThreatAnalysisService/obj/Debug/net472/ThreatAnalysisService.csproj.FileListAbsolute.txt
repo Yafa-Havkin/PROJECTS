@@ -1,0 +1,17 @@
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAnalysisService.csproj.AssemblyReference.cache
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAnalysisService.GeneratedMSBuildEditorConfig.editorconfig
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAnalysisService.AssemblyInfoInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAnalysisService.AssemblyInfo.cs
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAnalysisService.csproj.CoreCompileInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAnalysisService.sourcelink.json
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net472\ThreatAnalysisService.dll.config
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net472\ThreatAnalysisService.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net472\ThreatAnalysisService.pdb
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net472\System.ServiceModel.Duplex.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net472\System.ServiceModel.Primitives.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net472\System.ServiceModel.Security.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net472\Common.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\bin\Debug\net472\Common.pdb
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAn.EBE73A4C.Up2Date
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAnalysisService.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\ThreatAnalysisService\obj\Debug\net472\ThreatAnalysisService.pdb

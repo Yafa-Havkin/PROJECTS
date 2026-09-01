@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="TaskManagement.Api/TaskManagement.Api.csproj" Id="2234d47b-5962-48be-aae5-7ce4227c79da" />
+  <Project Path="TaskManagement.Shared/TaskManagement.Shared.csproj" Id="45d1fbe6-ee05-4bee-8451-36891d21c1b2" />
+  <Project Path="TaskManagementSystem.clayent/TaskManagementSystem.clayent.csproj" Id="83d32540-6386-473b-893c-118569a3c57e" />
+</Solution>

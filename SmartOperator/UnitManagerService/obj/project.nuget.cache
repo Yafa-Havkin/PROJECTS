@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/NOmnmliBgk=",
+  "success": true,
+  "projectFilePath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\UnitManagerService\\UnitManagerService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.http\\10.0.652802\\system.servicemodel.http.10.0.652802.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.primitives\\10.0.652802\\system.servicemodel.primitives.10.0.652802.nupkg.sha512"
+  ],
+  "logs": []
+}

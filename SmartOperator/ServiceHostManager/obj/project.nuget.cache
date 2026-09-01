@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "nNdEi9SxVT0=",
+  "success": true,
+  "projectFilePath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ServiceHostManager\\ServiceHostManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\corewcf.http\\1.9.1\\corewcf.http.1.9.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\corewcf.netframingbase\\1.9.1\\corewcf.netframingbase.1.9.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\corewcf.netnamedpipe\\1.9.1\\corewcf.netnamedpipe.1.9.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\corewcf.primitives\\1.9.1\\corewcf.primitives.1.9.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.cryptography\\10.0.2\\microsoft.bcl.cryptography.10.0.2.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.hashcode\\6.0.0\\microsoft.bcl.hashcode.6.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.19.1\\microsoft.identitymodel.abstractions.8.19.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.identitymodel.logging\\8.19.1\\microsoft.identitymodel.logging.8.19.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.19.1\\microsoft.identitymodel.tokens.8.19.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.identitymodel.tokens.saml\\8.19.1\\microsoft.identitymodel.tokens.saml.8.19.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.identitymodel.xml\\8.19.1\\microsoft.identitymodel.xml.8.19.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.directoryservices\\8.0.0\\system.directoryservices.8.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.directoryservices.protocols\\8.0.2\\system.directoryservices.protocols.8.0.2.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.http\\10.0.652802\\system.servicemodel.http.10.0.652802.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.primitives\\10.0.652802\\system.servicemodel.primitives.10.0.652802.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.web.services.description\\8.1.2\\system.web.services.description.8.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

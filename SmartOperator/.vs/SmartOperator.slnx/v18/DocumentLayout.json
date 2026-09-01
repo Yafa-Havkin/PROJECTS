@@ -1,0 +1,293 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\.copilot\\plans\\plan-retarget-projects-to-.net-10-(plan-b).md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{301082B1-EDE1-7465-08D1-C4DB8630E3D8}|UnitManagerService\\UnitManagerService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\unitmanagerservice\\interfaces\\iunitmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{301082B1-EDE1-7465-08D1-C4DB8630E3D8}|UnitManagerService\\UnitManagerService.csproj|solutionrelative:unitmanagerservice\\interfaces\\iunitmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{301082B1-EDE1-7465-08D1-C4DB8630E3D8}|UnitManagerService\\UnitManagerService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\unitmanagerservice\\services\\unitmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{301082B1-EDE1-7465-08D1-C4DB8630E3D8}|UnitManagerService\\UnitManagerService.csproj|solutionrelative:unitmanagerservice\\services\\unitmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433A6E72-A5D3-4875-A2CA-632E3CAA03B3}|CommandCenterUI\\CommandCenterUI.csproj|C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\commandcenterui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433A6E72-A5D3-4875-A2CA-632E3CAA03B3}|CommandCenterUI\\CommandCenterUI.csproj|solutionrelative:commandcenterui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93C85FB4-1EF5-463C-85CA-28710E6DE72E}|ServiceHostManager\\ServiceHostManager.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\servicehostmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93C85FB4-1EF5-463C-85CA-28710E6DE72E}|ServiceHostManager\\ServiceHostManager.csproj|solutionrelative:servicehostmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433A6E72-A5D3-4875-A2CA-632E3CAA03B3}|CommandCenterUI\\CommandCenterUI.csproj|C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\commandcenterui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433A6E72-A5D3-4875-A2CA-632E3CAA03B3}|CommandCenterUI\\CommandCenterUI.csproj|solutionrelative:commandcenterui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93C85FB4-1EF5-463C-85CA-28710E6DE72E}|ServiceHostManager\\ServiceHostManager.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\servicehostmanager\\servicehostmanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{93C85FB4-1EF5-463C-85CA-28710E6DE72E}|ServiceHostManager\\ServiceHostManager.csproj|solutionrelative:servicehostmanager\\servicehostmanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433A6E72-A5D3-4875-A2CA-632E3CAA03B3}|CommandCenterUI\\CommandCenterUI.csproj|C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\commandcenterui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{433A6E72-A5D3-4875-A2CA-632E3CAA03B3}|CommandCenterUI\\CommandCenterUI.csproj|solutionrelative:commandcenterui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C03A4EB7-1704-440F-A5EB-E77FFB9E6F8A}|Common\\Common.csproj|C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\common\\incidentreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C03A4EB7-1704-440F-A5EB-E77FFB9E6F8A}|Common\\Common.csproj|solutionrelative:common\\incidentreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\threatanalysisservice\\threatanalysisservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|solutionrelative:threatanalysisservice\\threatanalysisservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\threatanalysisservice\\services\\threatanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|solutionrelative:threatanalysisservice\\services\\threatanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\threatanalysisservice\\threatanalysisservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|solutionrelative:threatanalysisservice\\threatanalysisservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{301082B1-EDE1-7465-08D1-C4DB8630E3D8}|UnitManagerService\\UnitManagerService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\unitmanagerservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{301082B1-EDE1-7465-08D1-C4DB8630E3D8}|UnitManagerService\\UnitManagerService.csproj|solutionrelative:unitmanagerservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\threatanalysisservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|solutionrelative:threatanalysisservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\threatanalysisservice\\interfaces\\ithreatanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0BF3277-9624-57BD-20BA-F9FCBF002A9C}|ThreatAnalysisService\\ThreatAnalysisService.csproj|solutionrelative:threatanalysisservice\\interfaces\\ithreatanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{301082B1-EDE1-7465-08D1-C4DB8630E3D8}|UnitManagerService\\UnitManagerService.csproj|c:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\projects\\smartoperator\\unitmanagerservice\\unitmanagerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{301082B1-EDE1-7465-08D1-C4DB8630E3D8}|UnitManagerService\\UnitManagerService.csproj|solutionrelative:unitmanagerservice\\unitmanagerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\CommandCenterUI\\Form1.cs",
+              "RelativeDocumentMoniker": "CommandCenterUI\\Form1.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\CommandCenterUI\\Form1.cs",
+              "RelativeToolTip": "CommandCenterUI\\Form1.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAYwDYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T13:15:51.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitManagerService.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\UnitManagerService\\Services\\UnitManagerService.cs",
+              "RelativeDocumentMoniker": "UnitManagerService\\Services\\UnitManagerService.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\UnitManagerService\\Services\\UnitManagerService.cs",
+              "RelativeToolTip": "UnitManagerService\\Services\\UnitManagerService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T09:04:17.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\CommandCenterUI\\Program.cs",
+              "RelativeDocumentMoniker": "CommandCenterUI\\Program.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\CommandCenterUI\\Program.cs",
+              "RelativeToolTip": "CommandCenterUI\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T10:24:36.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUnitManager.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\UnitManagerService\\Interfaces\\IUnitManager.cs",
+              "RelativeDocumentMoniker": "UnitManagerService\\Interfaces\\IUnitManager.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\UnitManagerService\\Interfaces\\IUnitManager.cs",
+              "RelativeToolTip": "UnitManagerService\\Interfaces\\IUnitManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T08:28:08.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "plan-retarget-projects-to-.net-10-(plan-b).md [Preview]",
+              "DocumentMoniker": "C:\\Users\\DELL\\.copilot\\plans\\plan-retarget-projects-to-.net-10-(plan-b).md",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\DELL\\.copilot\\plans\\plan-retarget-projects-to-.net-10-(plan-b).md",
+              "ToolTip": "C:\\Users\\DELL\\.copilot\\plans\\plan-retarget-projects-to-.net-10-(plan-b).md [Preview]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\DELL\\.copilot\\plans\\plan-retarget-projects-to-.net-10-(plan-b).md [Preview]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-06-30T13:47:38.047Z",
+              "EditorCaption": " [Preview]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ServiceHostManager\\Program.cs",
+              "RelativeDocumentMoniker": "ServiceHostManager\\Program.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ServiceHostManager\\Program.cs",
+              "RelativeToolTip": "ServiceHostManager\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T12:47:29.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UnitManagerService.csproj",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\UnitManagerService\\UnitManagerService.csproj",
+              "RelativeDocumentMoniker": "UnitManagerService\\UnitManagerService.csproj",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\UnitManagerService\\UnitManagerService.csproj",
+              "RelativeToolTip": "UnitManagerService\\UnitManagerService.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-30T13:40:01.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ServiceHostManager.csproj",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ServiceHostManager\\ServiceHostManager.csproj",
+              "RelativeDocumentMoniker": "ServiceHostManager\\ServiceHostManager.csproj",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ServiceHostManager\\ServiceHostManager.csproj",
+              "RelativeToolTip": "ServiceHostManager\\ServiceHostManager.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-30T12:48:10.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ThreatAnalysisService.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\Services\\ThreatAnalysisService.cs",
+              "RelativeDocumentMoniker": "ThreatAnalysisService\\Services\\ThreatAnalysisService.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\Services\\ThreatAnalysisService.cs",
+              "RelativeToolTip": "ThreatAnalysisService\\Services\\ThreatAnalysisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T11:18:49.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThreatAnalysisService",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+              "RelativeDocumentMoniker": "ThreatAnalysisService\\ThreatAnalysisService.csproj",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+              "RelativeToolTip": "ThreatAnalysisService\\ThreatAnalysisService.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-30T11:45:03.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ThreatAnalysisService.csproj",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+              "RelativeDocumentMoniker": "ThreatAnalysisService\\ThreatAnalysisService.csproj",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+              "RelativeToolTip": "ThreatAnalysisService\\ThreatAnalysisService.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-30T10:09:32.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\UnitManagerService\\App.config",
+              "RelativeDocumentMoniker": "UnitManagerService\\App.config",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\UnitManagerService\\App.config",
+              "RelativeToolTip": "UnitManagerService\\App.config",
+              "ViewState": "AgIAAAQAAAAAAAAAAABBwA4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-30T10:21:17.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\App.config",
+              "RelativeDocumentMoniker": "ThreatAnalysisService\\App.config",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\App.config",
+              "RelativeToolTip": "ThreatAnalysisService\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-06-30T10:21:40.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IThreatAnalysis.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\Interfaces\\IThreatAnalysis.cs",
+              "RelativeDocumentMoniker": "ThreatAnalysisService\\Interfaces\\IThreatAnalysis.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\Interfaces\\IThreatAnalysis.cs",
+              "RelativeToolTip": "ThreatAnalysisService\\Interfaces\\IThreatAnalysis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T09:25:25.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\CommandCenterUI\\Form1.cs",
+              "RelativeDocumentMoniker": "CommandCenterUI\\Form1.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\CommandCenterUI\\Form1.cs [Design]",
+              "RelativeToolTip": "CommandCenterUI\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T08:13:43.991Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IncidentReport.cs",
+              "DocumentMoniker": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\Common\\IncidentReport.cs",
+              "RelativeDocumentMoniker": "Common\\IncidentReport.cs",
+              "ToolTip": "C:\\\u05D9\u05E4\u05D9\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD\\\u05D5\\PROJECTS\\SmartOperator\\Common\\IncidentReport.cs",
+              "RelativeToolTip": "Common\\IncidentReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T10:13:41.191Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 288,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

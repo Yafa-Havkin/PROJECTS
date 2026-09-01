@@ -1,0 +1,6 @@
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\Common\bin\Debug\Common.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\Common\bin\Debug\Common.pdb
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\Common\obj\Debug\Common.dll
+C:\יפי\לימודים\ו\PROJECTS\SmartOperator\Common\obj\Debug\Common.pdb

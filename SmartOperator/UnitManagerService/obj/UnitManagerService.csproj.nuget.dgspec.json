@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\UnitManagerService\\UnitManagerService.csproj": {}
+  },
+  "projects": {
+    "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "framework": "net472",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472"
+        }
+      }
+    },
+    "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+        "projectName": "ThreatAnalysisService",
+        "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "framework": "net472",
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj": {
+                "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472",
+          "targetAlias": "net472",
+          "dependencies": {
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[10.0.652802, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\UnitManagerService\\UnitManagerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\UnitManagerService\\UnitManagerService.csproj",
+        "projectName": "UnitManagerService",
+        "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\UnitManagerService\\UnitManagerService.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\UnitManagerService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "framework": "net472",
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj": {
+                "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj"
+              },
+              "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj": {
+                "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472",
+          "targetAlias": "net472",
+          "dependencies": {
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[10.0.652802, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[10.0.652802, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

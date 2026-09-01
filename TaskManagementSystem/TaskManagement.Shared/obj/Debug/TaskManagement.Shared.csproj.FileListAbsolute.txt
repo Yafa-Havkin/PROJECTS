@@ -1,0 +1,6 @@
+C:\יפי\לימודים\ו\PROJECTS\TaskManagementSystem\TaskManagement.Shared\bin\Debug\TaskManagement.Shared.dll
+C:\יפי\לימודים\ו\PROJECTS\TaskManagementSystem\TaskManagement.Shared\bin\Debug\TaskManagement.Shared.pdb
+C:\יפי\לימודים\ו\PROJECTS\TaskManagementSystem\TaskManagement.Shared\obj\Debug\TaskManagement.Shared.csproj.AssemblyReference.cache
+C:\יפי\לימודים\ו\PROJECTS\TaskManagementSystem\TaskManagement.Shared\obj\Debug\TaskManagement.Shared.csproj.CoreCompileInputs.cache
+C:\יפי\לימודים\ו\PROJECTS\TaskManagementSystem\TaskManagement.Shared\obj\Debug\TaskManagement.Shared.dll
+C:\יפי\לימודים\ו\PROJECTS\TaskManagementSystem\TaskManagement.Shared\obj\Debug\TaskManagement.Shared.pdb

@@ -11,9 +11,13 @@ namespace TaskService.Interfaces
     {
         [OperationContract]
         string GetMessage(string name);
+        [OperationContract]
         TaskItem CreateTask(string title, string discription);
+        [OperationContract]
         TaskItem GetTask(int id);
+        [OperationContract]
         List<TaskItem> GetAllTasks();
+        [OperationContract]
         bool UpdateTask(int id);
 
     }

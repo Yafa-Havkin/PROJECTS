@@ -1,0 +1,573 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "ServiceHostManager/1.0.0": {
+        "dependencies": {
+          "CoreWCF.Http": "1.9.1",
+          "CoreWCF.NetNamedPipe": "1.9.1",
+          "CoreWCF.Primitives": "1.9.1",
+          "ThreatAnalysisService": "1.0.0",
+          "UnitManagerService": "1.0.0"
+        },
+        "runtime": {
+          "ServiceHostManager.dll": {}
+        }
+      },
+      "CoreWCF.Http/1.9.1": {
+        "dependencies": {
+          "CoreWCF.Primitives": "1.9.1",
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
+          "Microsoft.Bcl.HashCode": "6.0.0",
+          "Microsoft.IdentityModel.Tokens": "8.19.1",
+          "Microsoft.IdentityModel.Tokens.Saml": "8.19.1",
+          "System.DirectoryServices": "8.0.0",
+          "System.DirectoryServices.Protocols": "8.0.2",
+          "System.Security.Cryptography.ProtectedData": "8.0.0",
+          "System.Web.Services.Description": "8.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CoreWCF.Http.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.1.31"
+          }
+        }
+      },
+      "CoreWCF.NetFramingBase/1.9.1": {
+        "dependencies": {
+          "CoreWCF.Primitives": "1.9.1",
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
+          "Microsoft.Bcl.HashCode": "6.0.0",
+          "Microsoft.IdentityModel.Tokens": "8.19.1",
+          "Microsoft.IdentityModel.Tokens.Saml": "8.19.1",
+          "System.DirectoryServices": "8.0.0",
+          "System.DirectoryServices.Protocols": "8.0.2",
+          "System.Security.Cryptography.ProtectedData": "8.0.0",
+          "System.Web.Services.Description": "8.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CoreWCF.NetFramingBase.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.1.31"
+          }
+        }
+      },
+      "CoreWCF.NetNamedPipe/1.9.1": {
+        "dependencies": {
+          "CoreWCF.NetFramingBase": "1.9.1",
+          "CoreWCF.Primitives": "1.9.1",
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
+          "Microsoft.Bcl.HashCode": "6.0.0",
+          "Microsoft.IdentityModel.Tokens": "8.19.1",
+          "Microsoft.IdentityModel.Tokens.Saml": "8.19.1",
+          "System.DirectoryServices": "8.0.0",
+          "System.DirectoryServices.Protocols": "8.0.2",
+          "System.Security.Cryptography.ProtectedData": "8.0.0",
+          "System.Web.Services.Description": "8.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CoreWCF.NetNamedPipe.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.1.31"
+          }
+        }
+      },
+      "CoreWCF.Primitives/1.9.1": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
+          "Microsoft.Bcl.HashCode": "6.0.0",
+          "Microsoft.IdentityModel.Tokens": "8.19.1",
+          "Microsoft.IdentityModel.Tokens.Saml": "8.19.1",
+          "System.DirectoryServices": "8.0.0",
+          "System.DirectoryServices.Protocols": "8.0.2",
+          "System.Security.Cryptography.ProtectedData": "8.0.0",
+          "System.Web.Services.Description": "8.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CoreWCF.Primitives.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.1.31"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Bcl.Cryptography/10.0.2": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Bcl.Cryptography.dll": {
+            "assemblyVersion": "10.0.0.2",
+            "fileVersion": "10.0.225.61305"
+          }
+        }
+      },
+      "Microsoft.Bcl.HashCode/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Bcl.HashCode.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.24.56208"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Abstractions/8.19.1": {
+        "runtime": {
+          "lib/net10.0/Microsoft.IdentityModel.Abstractions.dll": {
+            "assemblyVersion": "8.19.1.0",
+            "fileVersion": "8.19.1.26153"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/8.19.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Abstractions": "8.19.1"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "8.19.1.0",
+            "fileVersion": "8.19.1.26153"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/8.19.1": {
+        "dependencies": {
+          "Microsoft.Bcl.Cryptography": "10.0.2",
+          "Microsoft.IdentityModel.Logging": "8.19.1"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "8.19.1.0",
+            "fileVersion": "8.19.1.26153"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens.Saml/8.19.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "8.19.1",
+          "Microsoft.IdentityModel.Xml": "8.19.1"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.IdentityModel.Tokens.Saml.dll": {
+            "assemblyVersion": "8.19.1.0",
+            "fileVersion": "8.19.1.26153"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Xml/8.19.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "8.19.1"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.IdentityModel.Xml.dll": {
+            "assemblyVersion": "8.19.1.0",
+            "fileVersion": "8.19.1.26153"
+          }
+        }
+      },
+      "System.DirectoryServices/8.0.0": {
+        "runtime": {
+          "lib/net8.0/System.DirectoryServices.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.DirectoryServices.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "System.DirectoryServices.Protocols/8.0.2": {
+        "runtime": {
+          "lib/net8.0/System.DirectoryServices.Protocols.dll": {
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1725.26602"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/net8.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "linux",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1725.26602"
+          },
+          "runtimes/osx/lib/net8.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "osx",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1725.26602"
+          },
+          "runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1725.26602"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0": {
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "System.ServiceModel.Http/10.0.652802": {
+        "dependencies": {
+          "System.ServiceModel.Primitives": "10.0.652802"
+        },
+        "runtime": {
+          "lib/net10.0/System.ServiceModel.Http.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52802"
+          }
+        },
+        "resources": {
+          "lib/net10.0/cs/System.ServiceModel.Http.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net10.0/de/System.ServiceModel.Http.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net10.0/es/System.ServiceModel.Http.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net10.0/fr/System.ServiceModel.Http.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net10.0/it/System.ServiceModel.Http.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net10.0/ja/System.ServiceModel.Http.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net10.0/ko/System.ServiceModel.Http.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net10.0/pl/System.ServiceModel.Http.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net10.0/pt-BR/System.ServiceModel.Http.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net10.0/ru/System.ServiceModel.Http.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net10.0/tr/System.ServiceModel.Http.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net10.0/zh-Hans/System.ServiceModel.Http.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net10.0/zh-Hant/System.ServiceModel.Http.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.ServiceModel.Primitives/10.0.652802": {
+        "runtime": {
+          "lib/net10.0/System.ServiceModel.Duplex.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52802"
+          },
+          "lib/net10.0/System.ServiceModel.Primitives.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52802"
+          },
+          "lib/net10.0/System.ServiceModel.Security.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52802"
+          },
+          "lib/net10.0/System.ServiceModel.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "10.0.25.52802"
+          }
+        },
+        "resources": {
+          "lib/net10.0/cs/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net10.0/de/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net10.0/es/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net10.0/fr/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net10.0/it/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net10.0/ja/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net10.0/ko/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net10.0/pl/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net10.0/pt-BR/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net10.0/ru/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net10.0/tr/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net10.0/zh-Hans/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net10.0/zh-Hant/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.Web.Services.Description/8.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/System.Web.Services.Description.dll": {
+            "assemblyVersion": "8.1.2.0",
+            "fileVersion": "8.100.225.15402"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/cs/System.Web.Services.Description.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/System.Web.Services.Description.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/System.Web.Services.Description.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/System.Web.Services.Description.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/System.Web.Services.Description.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/System.Web.Services.Description.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/System.Web.Services.Description.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/System.Web.Services.Description.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/System.Web.Services.Description.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/System.Web.Services.Description.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/System.Web.Services.Description.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/System.Web.Services.Description.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/System.Web.Services.Description.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Common/1.0.0": {
+        "runtime": {
+          "Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ThreatAnalysisService/1.0.0": {
+        "dependencies": {
+          "Common": "1.0.0",
+          "System.ServiceModel.Primitives": "10.0.652802"
+        },
+        "runtime": {
+          "ThreatAnalysisService.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "UnitManagerService/1.0.0": {
+        "dependencies": {
+          "Common": "1.0.0",
+          "System.ServiceModel.Http": "10.0.652802",
+          "System.ServiceModel.Primitives": "10.0.652802",
+          "ThreatAnalysisService": "1.0.0"
+        },
+        "runtime": {
+          "UnitManagerService.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ServiceHostManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoreWCF.Http/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-64ppmysATZMlXNW4/hmrZiRIqL7AILdTxAD/P1qtIV3X/MJtOtJdv/GCh1v1y1U0lkz63n73nS1r56FtVyLSXw==",
+      "path": "corewcf.http/1.9.1",
+      "hashPath": "corewcf.http.1.9.1.nupkg.sha512"
+    },
+    "CoreWCF.NetFramingBase/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zNv1fnDHkyBsCGAZ20XVEbmw4E2GFKoH72GM46332rMeknGEoP+mc+mGv5GrWE0NFDwTFZgC66LaOyrfDVtRwg==",
+      "path": "corewcf.netframingbase/1.9.1",
+      "hashPath": "corewcf.netframingbase.1.9.1.nupkg.sha512"
+    },
+    "CoreWCF.NetNamedPipe/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JFp35jgaLaz2+uA4ZTNjBDcOxDXnBfyYcT9st2p/rcF4s4mKGMgpgo8pHPb4rBBvFx13YAV7IRu9AOnFYedWlw==",
+      "path": "corewcf.netnamedpipe/1.9.1",
+      "hashPath": "corewcf.netnamedpipe.1.9.1.nupkg.sha512"
+    },
+    "CoreWCF.Primitives/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qAUW6tHffvRm81UOqu8QOY3jIq8bZ8YgZLa1D2442bp4wjeS6xSijCCdCTi+GtpMLNVDn/gd3zuv4WSj/9ITpw==",
+      "path": "corewcf.primitives/1.9.1",
+      "hashPath": "corewcf.primitives.1.9.1.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3WA9q9yVqJp222P3x1wYIGDAkpjAku0TMUaaQV22g6L67AI0LdOIrVS7Ht2vJfLHGSPVuqN94vIr15qn+HEkHw==",
+      "path": "microsoft.bcl.asyncinterfaces/8.0.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.Cryptography/10.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LG9Yll3B5aNpxv0+D47g6LiOiKBIlodhcHdQwcYzo8VeexFLGqx5ymetmA2aBRyo9cCcWsQWrFsdbsr8LvmWDw==",
+      "path": "microsoft.bcl.cryptography/10.0.2",
+      "hashPath": "microsoft.bcl.cryptography.10.0.2.nupkg.sha512"
+    },
+    "Microsoft.Bcl.HashCode/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GI4jcoi6eC9ZhNOQylIBaWOQjyGaR8T6N3tC1u8p3EXfndLCVNNWa+Zp+ocjvvS3kNBN09Zma2HXL0ezO0dRfw==",
+      "path": "microsoft.bcl.hashcode/6.0.0",
+      "hashPath": "microsoft.bcl.hashcode.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Abstractions/8.19.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gFA8THIk23uNF/vMdOHnjIdXD1LyA2g12cHzMJ+Xag6WpgWLw6E/6uCXxvA0gp9d2yAvkRt3xzFzMUiO/hofnQ==",
+      "path": "microsoft.identitymodel.abstractions/8.19.1",
+      "hashPath": "microsoft.identitymodel.abstractions.8.19.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/8.19.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H+sMrMpdbWnwkQnpb/ESkQovtOgdefmj0ecGCcP40mDKzE5i4dUYkH6599M9mWYFNGNJnTp92l/9wLubYXWimw==",
+      "path": "microsoft.identitymodel.logging/8.19.1",
+      "hashPath": "microsoft.identitymodel.logging.8.19.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/8.19.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KDiuSLXud2AFVNAOottd8ztVysfPeHyr4r8gofU3/VKUXlI7oytzGTnPsNJ/B3nui17rgz8wAdWNJOtzPjkUxw==",
+      "path": "microsoft.identitymodel.tokens/8.19.1",
+      "hashPath": "microsoft.identitymodel.tokens.8.19.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens.Saml/8.19.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oWYkKn+Xsfs71g6P8PDKemD6BpQWyoa4sFwqJhZV3uoF42IBwUxFdM88j8NLTmwpllwpGaIVLgF9QfmqUIKjow==",
+      "path": "microsoft.identitymodel.tokens.saml/8.19.1",
+      "hashPath": "microsoft.identitymodel.tokens.saml.8.19.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Xml/8.19.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P38XLiHFE52MUrOJKQvPUkFnkkeavBL55KMqigf560clDPWGvJe57kgM0io7liHagGTanC4KAWzPLPV/hSsNnQ==",
+      "path": "microsoft.identitymodel.xml/8.19.1",
+      "hashPath": "microsoft.identitymodel.xml.8.19.1.nupkg.sha512"
+    },
+    "System.DirectoryServices/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7nit//efUTy1OsAKco2f02PMrwsR2S234N0dVVp84udC77YcvpOQDz5znAWMtgMWBzY1aRJvUW61jo/7vQRfXg==",
+      "path": "system.directoryservices/8.0.0",
+      "hashPath": "system.directoryservices.8.0.0.nupkg.sha512"
+    },
+    "System.DirectoryServices.Protocols/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7pSU+qkmdkwbikAvn4kpvClfyffaR7dYJw7ucBtO5d6m/7wgKZIULOZAGFLMIMOFFmg7xC67TYKptHxcbqQm+Q==",
+      "path": "system.directoryservices.protocols/8.0.2",
+      "hashPath": "system.directoryservices.protocols.8.0.2.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
+      "path": "system.security.cryptography.protecteddata/8.0.0",
+      "hashPath": "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+    },
+    "System.ServiceModel.Http/10.0.652802": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G02XZvmccf42QCU5MjviBIg69MSMAVHwL1inVPsNSpfp5g+t5BkQM3DyvWRLN4qmeFDWSF/mA1rIYONIDu/6Dg==",
+      "path": "system.servicemodel.http/10.0.652802",
+      "hashPath": "system.servicemodel.http.10.0.652802.nupkg.sha512"
+    },
+    "System.ServiceModel.Primitives/10.0.652802": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ULfGNl75BNXkpF42wNV2CDXJ64dUZZEa8xO2mBsc4tqbW9QjruxjEB6bAr4Z/T1rNU+leOztIjCJQYsBGFWYlw==",
+      "path": "system.servicemodel.primitives/10.0.652802",
+      "hashPath": "system.servicemodel.primitives.10.0.652802.nupkg.sha512"
+    },
+    "System.Web.Services.Description/8.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FziIBleSpygZOBudSeMkawLgfarnSam7paGkTtV9ITyTmw/TdEqB+moS0TeApmNfAMWGbcWXDXr3djckuLgGDg==",
+      "path": "system.web.services.description/8.1.2",
+      "hashPath": "system.web.services.description.8.1.2.nupkg.sha512"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ThreatAnalysisService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnitManagerService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

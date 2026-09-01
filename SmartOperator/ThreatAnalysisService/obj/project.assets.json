@@ -1,0 +1,186 @@
+{
+  "version": 4,
+  "targets": {
+    "net472": {
+      "System.ServiceModel.Primitives/10.0.652802": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.IdentityModel",
+          "System.Runtime.Serialization",
+          "System.ServiceModel",
+          "System.Xml"
+        ],
+        "compile": {
+          "ref/net462/System.ServiceModel.Duplex.dll": {},
+          "ref/net462/System.ServiceModel.Primitives.dll": {},
+          "ref/net462/System.ServiceModel.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.ServiceModel.Duplex.dll": {
+            "related": ".pdb"
+          },
+          "lib/net462/System.ServiceModel.Primitives.dll": {
+            "related": ".pdb"
+          },
+          "lib/net462/System.ServiceModel.Security.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "System.ServiceModel.Primitives/10.0.652802": {
+      "sha512": "ULfGNl75BNXkpF42wNV2CDXJ64dUZZEa8xO2mBsc4tqbW9QjruxjEB6bAr4Z/T1rNU+leOztIjCJQYsBGFWYlw==",
+      "type": "package",
+      "path": "system.servicemodel.primitives/10.0.652802",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net10.0/System.ServiceModel.Duplex.dll",
+        "lib/net10.0/System.ServiceModel.Duplex.pdb",
+        "lib/net10.0/System.ServiceModel.Primitives.dll",
+        "lib/net10.0/System.ServiceModel.Primitives.pdb",
+        "lib/net10.0/System.ServiceModel.Security.dll",
+        "lib/net10.0/System.ServiceModel.Security.pdb",
+        "lib/net10.0/System.ServiceModel.dll",
+        "lib/net10.0/System.ServiceModel.pdb",
+        "lib/net10.0/cs/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/de/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/es/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/fr/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/it/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/ja/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/ko/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/pl/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/pt-BR/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/ru/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/tr/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/zh-Hans/System.ServiceModel.Primitives.resources.dll",
+        "lib/net10.0/zh-Hant/System.ServiceModel.Primitives.resources.dll",
+        "lib/net462/System.ServiceModel.Duplex.dll",
+        "lib/net462/System.ServiceModel.Duplex.pdb",
+        "lib/net462/System.ServiceModel.Primitives.dll",
+        "lib/net462/System.ServiceModel.Primitives.pdb",
+        "lib/net462/System.ServiceModel.Security.dll",
+        "lib/net462/System.ServiceModel.Security.pdb",
+        "lib/netstandard2.0/System.ServiceModel.Duplex.dll",
+        "lib/netstandard2.0/System.ServiceModel.Duplex.pdb",
+        "lib/netstandard2.0/System.ServiceModel.Primitives.dll",
+        "lib/netstandard2.0/System.ServiceModel.Primitives.pdb",
+        "lib/netstandard2.0/System.ServiceModel.Security.dll",
+        "lib/netstandard2.0/System.ServiceModel.Security.pdb",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/net10.0/System.ServiceModel.Duplex.dll",
+        "ref/net10.0/System.ServiceModel.Primitives.dll",
+        "ref/net10.0/System.ServiceModel.Security.dll",
+        "ref/net10.0/System.ServiceModel.dll",
+        "ref/net462/System.ServiceModel.Duplex.dll",
+        "ref/net462/System.ServiceModel.Primitives.dll",
+        "ref/net462/System.ServiceModel.Security.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/System.ServiceModel.Duplex.dll",
+        "ref/netstandard2.0/System.ServiceModel.Primitives.dll",
+        "ref/netstandard2.0/System.ServiceModel.Security.dll",
+        "system.servicemodel.primitives.10.0.652802.nupkg.sha512",
+        "system.servicemodel.primitives.nuspec"
+      ]
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net472": [
+      "Common >= 1.0.0",
+      "System.ServiceModel.Primitives >= 10.0.652802"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+      "projectName": "ThreatAnalysisService",
+      "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "framework": "net472",
+          "targetAlias": "net472",
+          "projectReferences": {
+            "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj": {
+              "projectPath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\Common\\Common.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.300"
+    },
+    "frameworks": {
+      "net472": {
+        "framework": "net472",
+        "targetAlias": "net472",
+        "dependencies": {
+          "System.ServiceModel.Primitives": {
+            "target": "Package",
+            "version": "[10.0.652802, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

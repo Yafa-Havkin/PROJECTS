@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YgoI0E0D5vE=",
+  "success": true,
+  "projectFilePath": "C:\\יפי\\לימודים\\ו\\PROJECTS\\SmartOperator\\ThreatAnalysisService\\ThreatAnalysisService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\system.servicemodel.primitives\\10.0.652802\\system.servicemodel.primitives.10.0.652802.nupkg.sha512"
+  ],
+  "logs": []
+}
