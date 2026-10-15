@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://garagesportal.fnx.co.il/login",
+  "url": "https://garagesportal.fnx.co.il/login",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 6,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://garagesportal.fnx.co.il/login",
+  "handled_at": "2026-10-15 15:18:09.222770+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://surgeryclaim.fnx.co.il/surgery/home",
+  "url": "https://surgeryclaim.fnx.co.il/surgery/home",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://surgeryclaim.fnx.co.il/surgery/home",
+  "handled_at": "2026-10-15 15:17:56.361447+00:00"
+}

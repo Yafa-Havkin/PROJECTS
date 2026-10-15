@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://dentist.fnx.co.il/dentist/login",
+  "url": "https://dentist.fnx.co.il/dentist/login",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://dentist.fnx.co.il/dentist/login",
+  "handled_at": "2026-10-15 15:18:09.678292+00:00"
+}

@@ -11,18 +11,28 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+
+#: Maximum accepted length (characters) for a user question. Requests longer
+#: than this are rejected with HTTP 422 before any work is done, bounding
+#: prompt size and protecting the backend from abuse.
+MAX_QUERY_LENGTH = 2000
+MAX_ID_LENGTH = 128
 
 
 # --------------------------------------------------------------------------- #
 # Request / response bodies
 # --------------------------------------------------------------------------- #
 class ChatRequest(BaseModel):
-    """POST /api/chat body."""
+    """POST /api/chat body.
 
-    session_id: str
-    query: str
-    persona_id: str
+    ``query`` is length-bounded (1..MAX_QUERY_LENGTH) so an empty or absurdly
+    long question is rejected up front rather than reaching the LLM.
+    """
+
+    session_id: str = Field(..., min_length=1, max_length=MAX_ID_LENGTH)
+    query: str = Field(..., min_length=1, max_length=MAX_QUERY_LENGTH)
+    persona_id: str = Field(..., min_length=1, max_length=MAX_ID_LENGTH)
 
 
 class HealthResponse(BaseModel):

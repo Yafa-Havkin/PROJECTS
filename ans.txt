@@ -1,0 +1,33 @@
+﻿data: {"type": "token", "content": "בשמ"}
+
+data: {"type": "token", "content": "חה! 😊\n\nאני העוזר הדיגיטלי של חברת הפני"}
+
+data: {"type": "token", "content": "קס, וכאן כדי לעזור לך בשמחה. עם זאת, השאלה שהצגת הגיעה א"}
+
+data: {"type": "token", "content": "לי בצורה לא ברורה (עם סימני שאלה). \n\nאשמח מאוד לעזור לך בכל"}
+
+data: {"type": "token", "content": " שאלה הנוגעת למוצרי ולשירותי הפניקס! \n\nלכל עניין אי"}
+
+data: {"type": "token", "content": "שי או שאלה ספציפית, מומלץ תמיד לפנות לשירות הלקוחות של הפניקס"}
+
+data: {"type": "token", "content": ". מוזמן בשמחה לשאול שאלת המשך אם תרצה פרטים נוספים."}
+
+data: {"type": "token", "content": "\n\nמקורות:\n- https://forms.fnx.co.il/cv-form-studio/he/"}
+
+data: {"type": "token", "content": "form?f=2000288\n- https://forms.fnx.co.il/"}
+
+data: {"type": "token", "content": "cv-form-studio/he/form?f=2000240\n- https://digital"}
+
+data: {"type": "token", "content": "-content.fnx.co.il/Documents/premiot_nesiot_yomiot.xls\n- https"}
+
+data: {"type": "token", "content": "://digital-content.fnx.co.il/Documents/fnx-equal-pay-law-public"}
+
+data: {"type": "token", "content": "2025.pdf\n- https://myloans.fnx.co.il/xtafnit/?"}
+
+data: {"type": "token", "content": "utm_source=mainweb&utm_medium=organicweb&utm_campaign=front_web"}
+
+data: {"type": "sources", "urls": ["https://forms.fnx.co.il/cv-form-studio/he/form?f=2000288", "https://forms.fnx.co.il/cv-form-studio/he/form?f=2000240", "https://digital-content.fnx.co.il/Documents/premiot_nesiot_yomiot.xls", "https://digital-content.fnx.co.il/Documents/fnx-equal-pay-law-public2025.pdf", "https://myloans.fnx.co.il/xtafnit/?utm_source=mainweb&utm_medium=organicweb&utm_campaign=front_web"]}
+
+data: {"type": "done"}
+
+

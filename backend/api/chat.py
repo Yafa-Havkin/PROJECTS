@@ -135,7 +135,7 @@ async def chat(request: ChatRequest) -> StreamingResponse:
 
     return StreamingResponse(
         event_generator(),
-        media_type="text/event-stream",
+        media_type="text/event-stream; charset=utf-8",
         headers=_SSE_HEADERS,
     )
 

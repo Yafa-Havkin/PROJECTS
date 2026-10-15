@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://agent.fnx.co.il/my.policy",
+  "url": "https://agent.fnx.co.il/my.policy",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://agent.fnx.co.il/my.logout.php3?errorcode=19",
+  "handled_at": "2026-10-15 15:18:08.617479+00:00"
+}

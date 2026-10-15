@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://mobile.fnx.co.il/xmz7/atdcrla6",
+  "url": "https://mobile.fnx.co.il/xMZ7/atdcrla6",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://my.fnx.co.il/claims?onelink_id=xMZ7&c=marketing_website_claims&af_dp=pinfoapp%3A%2F%2Fonelink&shortlink=atdcrla6&pid=marketing_website&af_xp=email&af_status=Non-organic&source_caller=ui&deep_link_value=x%2Fx%2Fpinfowv%2Fclaims",
+  "handled_at": "2026-10-15 15:18:06.853348+00:00"
+}

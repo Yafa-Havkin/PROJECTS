@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://digital-content.fnx.co.il/sites/docs/genery/for_new_site/esg/%d7%94%d7%a4%d7%a0%d7%99%d7%a7%d7%a1-%d7%93%d7%95%d7%97-%d7%9e%d7%9e%d7%95%d7%a0%d7%94-%d7%90%d7%96%d7%a8%d7%97%d7%99%d7%9d-%d7%95%d7%aa%d7%99%d7%a7%d7%99%d7%9d25.pdf",
+  "url": "https://digital-content.fnx.co.il/sites/docs/genery/for_new_site/esg/%D7%94%D7%A4%D7%A0%D7%99%D7%A7%D7%A1-%D7%93%D7%95%D7%97-%D7%9E%D7%9E%D7%95%D7%A0%D7%94-%D7%90%D7%96%D7%A8%D7%97%D7%99%D7%9D-%D7%95%D7%AA%D7%99%D7%A7%D7%99%D7%9D25.pdf",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://digital-content.fnx.co.il/sites/docs/genery/for_new_site/esg/%D7%94%D7%A4%D7%A0%D7%99%D7%A7%D7%A1-%D7%93%D7%95%D7%97-%D7%9E%D7%9E%D7%95%D7%A0%D7%94-%D7%90%D7%96%D7%A8%D7%97%D7%99%D7%9D-%D7%95%D7%AA%D7%99%D7%A7%D7%99%D7%9D25.pdf",
+  "handled_at": "2026-10-15 15:18:24.002430+00:00"
+}

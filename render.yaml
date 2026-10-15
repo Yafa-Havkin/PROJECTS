@@ -13,11 +13,21 @@ services:
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python -m uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
     healthCheckPath: /api/health
+    # Persistent disk so a re-crawl's updated vector store survives restarts /
+    # redeploys. Mounted at the same path the tenant config points to.
+    disk:
+      name: phoenix-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
     envVars:
       - key: PYTHON_VERSION
         value: "3.11.9"
       - key: PHOENIX_TENANT_CONFIG
         value: config/phoenix.yaml
+      # Scheduled re-crawl is OFF by default (set to "true" to enable in-process
+      # weekly re-crawl per config/phoenix.yaml recrawl_schedule).
+      - key: PHOENIX_ENABLE_SCHEDULER
+        value: "false"
       # Public read-only demo: allow any origin.
       - key: PHOENIX_CORS_ORIGINS
         value: "*"

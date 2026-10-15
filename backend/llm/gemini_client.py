@@ -278,8 +278,12 @@ class GeminiClient:
             resp.close()
             raise _StreamRollover(detail)
 
-        for line in resp.iter_lines(decode_unicode=True):
-            if not line or not line.startswith("data:"):
+        resp.encoding = "utf-8"
+        for raw_line in resp.iter_lines():
+            if not raw_line:
+                continue
+            line = raw_line.decode("utf-8") if isinstance(raw_line, bytes) else raw_line
+            if not line.startswith("data:"):
                 continue
             data = line[len("data:"):].strip()
             if data == "[DONE]":

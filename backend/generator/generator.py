@@ -14,12 +14,16 @@ Grounding rules (enforced in the prompt + by short-circuiting on no content):
 
 from __future__ import annotations
 
+import asyncio
 import logging
-from collections.abc import AsyncGenerator, Iterator
+from collections.abc import AsyncGenerator
 
 from backend.config.models import PersonaConfig, TenantConfig
 from backend.llm.gemini_client import GeminiClient, GeminiError
 from backend.models import NoContentSignal, ScoredChunk, Turn
+
+#: Sentinels placed on the bridge queue to mark end-of-stream / failure.
+_STREAM_DONE = object()
 
 logger = logging.getLogger("phoenix_rag_bot.generator")
 
@@ -70,18 +74,38 @@ class AnswerGenerator:
 
         prompt = self._build_prompt(query, retrieval, persona, history)
 
-        try:
-            # The client's generate_stream is a sync generator; iterate it and
-            # hand fragments out of the async generator.
-            for fragment in self._iter_stream(prompt):
-                yield fragment
-        except GeminiError:
-            logger.error("LLM generation failed across all models/keys.", exc_info=True)
-            yield BACKEND_ERROR_MESSAGE
+        # The client's generate_stream is a BLOCKING generator (it does network
+        # I/O with `requests`). Iterating it directly inside this async
+        # generator would block the event loop and stall other requests. So we
+        # run it in a worker thread and bridge fragments back through an
+        # asyncio.Queue — the event loop stays free while we await the queue.
+        queue: asyncio.Queue[object] = asyncio.Queue()
+        loop = asyncio.get_running_loop()
 
-    def _iter_stream(self, prompt: str) -> Iterator[str]:
-        """Wrap the client's streaming generator (kept separate for testing)."""
-        yield from self._client.generate_stream(prompt)
+        def _produce() -> None:
+            try:
+                for fragment in self._client.generate_stream(prompt):
+                    loop.call_soon_threadsafe(queue.put_nowait, fragment)
+            except GeminiError:
+                logger.error(
+                    "LLM generation failed across all models/keys.", exc_info=True
+                )
+                loop.call_soon_threadsafe(queue.put_nowait, BACKEND_ERROR_MESSAGE)
+            except Exception:  # noqa: BLE001 — never let the worker die silently.
+                logger.error("Unexpected generation error.", exc_info=True)
+                loop.call_soon_threadsafe(queue.put_nowait, BACKEND_ERROR_MESSAGE)
+            finally:
+                loop.call_soon_threadsafe(queue.put_nowait, _STREAM_DONE)
+
+        worker = asyncio.create_task(asyncio.to_thread(_produce))
+        try:
+            while True:
+                item = await queue.get()
+                if item is _STREAM_DONE:
+                    break
+                yield item  # type: ignore[misc]
+        finally:
+            await worker
 
     # ------------------------------------------------------------------ #
     def _build_prompt(

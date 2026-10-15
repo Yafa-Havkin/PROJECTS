@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://mobile.fnx.co.il/xmz7/8kuo5e7m",
+  "url": "https://mobile.fnx.co.il/xMZ7/8kuo5e7m",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://www.fnx.co.il/customer-service/app/?af_dp=pinfoapp%3A%2F%2Fonelink&pid=marketing_website&af_status=Non-organic&shortlink=8kuo5e7m&c=app_download_marketing_website_new_invest_graph&deep_link_value=InvestmentsScreen%2Fx%2FnativePage&source_caller=ui&onelink_id=xMZ7&af_xp=email",
+  "handled_at": "2026-10-15 15:18:08.167160+00:00"
+}
