@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Heebo", system-ui, sans-serif;
+  background: linear-gradient(160deg, #f4f6fb 0%, #eef1f7 100%);
+  color: #0e2a47;
+}
+
+/* Thin, subtle scrollbar for the chat area. */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(14, 42, 71, 0.18);
+  border-radius: 9999px;
+}
