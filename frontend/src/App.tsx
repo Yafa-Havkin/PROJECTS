@@ -1,14 +1,3 @@
-/**
- * App — the root shell of the Phoenix RAG Bot chat UI.
- *
- * Owns the single ChatState and wires the children: DisclaimerBanner,
- * PersonaToggle, MessageList, LoadingIndicator, MessageInput.
- *
- * - Session handling: useSession creates the session on mount; the "שיחה חדשה"
- *   button and a persona switch both start a fresh session + clear messages.
- * - Streaming: handleSend appends a user message + an empty streaming assistant
- *   message, flips isGenerating, and streams tokens via useChat.
- */
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { ChatState, Message, PersonaInfo } from "./types";
 import { useSession } from "./hooks/useSession";
@@ -36,6 +25,8 @@ interface PersonasResponse {
 
 function App() {
   const { sessionId, newSession } = useSession();
+  const [chatOpen, setChatOpen] = useState(false);
+  const [chatExpanded, setChatExpanded] = useState(false);
 
   const [state, setState] = useState<ChatState>({
     sessionId: "",
@@ -49,7 +40,6 @@ function App() {
     setState((prev) => ({ ...prev, sessionId }));
   }, [sessionId]);
 
-  // Load personas once on mount.
   useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -67,9 +57,7 @@ function App() {
         console.error("Failed to load personas", err);
       }
     })();
-    return () => {
-      cancelled = true;
-    };
+    return () => { cancelled = true; };
   }, []);
 
   const streamingIdRef = useRef<string | null>(null);
@@ -91,14 +79,8 @@ function App() {
   }, []);
 
   const { sendMessage } = useChat({
-    onToken: (text) => {
-      const id = streamingIdRef.current;
-      if (id) appendToMessage(id, text);
-    },
-    onSources: (urls) => {
-      const id = streamingIdRef.current;
-      if (id) updateMessage(id, { sources: urls });
-    },
+    onToken: (text) => { const id = streamingIdRef.current; if (id) appendToMessage(id, text); },
+    onSources: (urls) => { const id = streamingIdRef.current; if (id) updateMessage(id, { sources: urls }); },
     onDone: () => {
       const id = streamingIdRef.current;
       if (id) updateMessage(id, { isStreaming: false });
@@ -107,14 +89,7 @@ function App() {
     },
     onError: (message) => {
       const id = streamingIdRef.current;
-      if (id) {
-        updateMessage(id, {
-          content: message,
-          isError: true,
-          isStreaming: false,
-          sources: undefined,
-        });
-      }
+      if (id) updateMessage(id, { content: message, isError: true, isStreaming: false, sources: undefined });
       streamingIdRef.current = null;
       setState((prev) => ({ ...prev, isGenerating: false }));
     },
@@ -123,32 +98,12 @@ function App() {
   const handleSend = useCallback(
     (text: string) => {
       if (state.isGenerating) return;
-
-      const userMessage: Message = {
-        id: nextMessageId(),
-        role: "user",
-        content: text,
-      };
+      const userMessage: Message = { id: nextMessageId(), role: "user", content: text };
       const assistantId = nextMessageId();
-      const assistantMessage: Message = {
-        id: assistantId,
-        role: "assistant",
-        content: "",
-        isStreaming: true,
-      };
-
+      const assistantMessage: Message = { id: assistantId, role: "assistant", content: "", isStreaming: true };
       streamingIdRef.current = assistantId;
-      setState((prev) => ({
-        ...prev,
-        messages: [...prev.messages, userMessage, assistantMessage],
-        isGenerating: true,
-      }));
-
-      void sendMessage({
-        sessionId: state.sessionId,
-        query: text,
-        personaId: state.activePersonaId,
-      });
+      setState((prev) => ({ ...prev, messages: [...prev.messages, userMessage, assistantMessage], isGenerating: true }));
+      void sendMessage({ sessionId: state.sessionId, query: text, personaId: state.activePersonaId });
     },
     [state.isGenerating, state.sessionId, state.activePersonaId, sendMessage]
   );
@@ -156,14 +111,8 @@ function App() {
   const handlePersonaChange = useCallback(
     (personaId: string) => {
       if (personaId === state.activePersonaId) return;
-      // Switching persona starts a FRESH conversation.
       streamingIdRef.current = null;
-      setState((prev) => ({
-        ...prev,
-        activePersonaId: personaId,
-        messages: [],
-        isGenerating: false,
-      }));
+      setState((prev) => ({ ...prev, activePersonaId: personaId, messages: [], isGenerating: false }));
       void newSession();
     },
     [newSession, state.activePersonaId]
@@ -177,37 +126,127 @@ function App() {
   }, [newSession, state.isGenerating]);
 
   return (
-    <div dir="rtl" className="flex min-h-screen flex-col items-center px-4 py-6">
-      <div className="flex min-h-[calc(100vh-3rem)] w-full max-w-3xl flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card">
-        {/* ===== Header ===== */}
-        <header className="bg-gradient-to-l from-phoenix-navy via-phoenix-navy-light to-phoenix-navy px-6 pb-5 pt-5 text-white">
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-phoenix-glow via-phoenix to-phoenix-dark text-2xl shadow-glow">
-                🔥
-              </div>
+    <div dir="rtl" className="relative min-h-screen">
+
+      {/* ===== Phoenix website mock ===== */}
+      <div className="phoenix-site">
+        {/* Top bar */}
+        <div className="phoenix-topbar">
+          <span className="phoenix-topbar-links">כניסה לאזור אישי | צור קשר | נגישות</span>
+        </div>
+
+        {/* Main nav */}
+        <nav className="phoenix-nav">
+          <div className="phoenix-nav-inner">
+            <div className="phoenix-logo">
+              <span className="phoenix-logo-icon">🔥</span>
+              <span className="phoenix-logo-text">הפניקס</span>
+            </div>
+            <div className="phoenix-nav-links">
+              {["ביטוח רכב", "ביטוח בריאות", "ביטוח חיים", "פנסיה וחיסכון", "ביטוח דירה", "אודות"].map((item) => (
+                <a key={item} href="#" className="phoenix-nav-link">{item}</a>
+              ))}
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero */}
+        <div className="phoenix-hero">
+          <div className="phoenix-hero-content">
+            <h1 className="phoenix-hero-title">הביטוח שמבין אותך</h1>
+            <p className="phoenix-hero-sub">פתרונות ביטוח ופיננסים מותאמים אישית לכל שלב בחיים</p>
+            <div className="phoenix-hero-btns">
+              <button className="phoenix-btn-primary">לקבלת הצעת מחיר</button>
+              <button className="phoenix-btn-secondary">גלה את המוצרים שלנו</button>
+            </div>
+          </div>
+        </div>
+
+        {/* Cards */}
+        <div className="phoenix-cards">
+          {[
+            { icon: "🚗", title: "ביטוח רכב", desc: "ביטוח מקיף, צד ג' ואובדן טוטאלי" },
+            { icon: "🏥", title: "ביטוח בריאות", desc: "כיסוי רפואי מקיף לכל המשפחה" },
+            { icon: "🏠", title: "ביטוח דירה", desc: "הגנה על הבית ותכולתו" },
+            { icon: "💰", title: "פנסיה וחיסכון", desc: "תכנון פיננסי לעתיד בטוח" },
+          ].map((card) => (
+            <div key={card.title} className="phoenix-card">
+              <span className="phoenix-card-icon">{card.icon}</span>
+              <h3 className="phoenix-card-title">{card.title}</h3>
+              <p className="phoenix-card-desc">{card.desc}</p>
+              <a href="#" className="phoenix-card-link">למידע נוסף ←</a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ===== Chat bubble button ===== */}
+      <button
+        onClick={() => setChatOpen((o) => !o)}
+        className="chat-bubble-btn"
+        aria-label="פתח צ'אט"
+      >
+        {chatOpen ? (
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        ) : (
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 14H6l-2 2V4h16v12z"/>
+          </svg>
+        )}
+        {!chatOpen && <span className="chat-bubble-label">צ'אט AI</span>}
+      </button>
+
+      {/* ===== Chat window ===== */}
+      {chatOpen && (
+        <div className={chatExpanded ? "chat-window chat-window--expanded" : "chat-window"} dir="rtl">
+          {/* Header */}
+          <header className="chat-window-header">
+            <div className="flex items-center gap-2">
+              <span className="text-xl">🔥</span>
               <div>
-                <h1 className="text-xl font-extrabold tracking-tight">
-                  הפניקס
-                  <span className="mr-2 font-medium text-white/70">— בוט מידע</span>
-                </h1>
-                <p className="text-xs text-white/60">
-                  עונה על בסיס התוכן הציבורי באתר הפניקס
-                </p>
+                <div className="font-bold text-sm">עוזר הפניקס</div>
+                <div className="text-xs text-white/70">מבוסס בינה מלאכותית</div>
               </div>
             </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => void handleNewSession()}
+                disabled={state.isGenerating}
+                className="text-xs bg-white/20 hover:bg-white/30 rounded-full px-3 py-1 transition disabled:opacity-50"
+              >
+                + חדש
+              </button>
+              <button
+                onClick={() => setChatExpanded((e) => !e)}
+                className="text-white/70 hover:text-white transition"
+                aria-label="הגדל/הקטן"
+              >
+                {chatExpanded ? (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="4 14 10 14 10 20" /><polyline points="20 10 14 10 14 4" />
+                    <line x1="10" y1="14" x2="3" y2="21" /><line x1="21" y1="3" x2="14" y2="10" />
+                  </svg>
+                ) : (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 3 21 3 21 9" /><polyline points="9 21 3 21 3 15" />
+                    <line x1="21" y1="3" x2="14" y2="10" /><line x1="3" y1="21" x2="10" y2="14" />
+                  </svg>
+                )}
+              </button>
+              <button onClick={() => setChatOpen(false)} className="text-white/70 hover:text-white transition">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            </div>
+          </header>
 
-            <button
-              type="button"
-              onClick={() => void handleNewSession()}
-              disabled={state.isGenerating}
-              className="rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-phoenix-navy shadow-sm transition hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              + שיחה חדשה
-            </button>
-          </div>
-
-          <div className="mt-4">
+          {/* Persona toggle */}
+          <div className="chat-window-persona">
             <PersonaToggle
               personas={state.availablePersonas}
               activePersonaId={state.activePersonaId}
@@ -215,27 +254,24 @@ function App() {
               disabled={state.isGenerating}
             />
           </div>
-        </header>
 
-        {/* ===== Disclaimer ===== */}
-        <div className="px-6">
-          <DisclaimerBanner />
+          {/* Disclaimer */}
+          <div className="px-3">
+            <DisclaimerBanner />
+          </div>
+
+          {/* Messages */}
+          <main className="chat-window-messages">
+            <MessageList messages={state.messages} />
+            <LoadingIndicator visible={state.isGenerating} />
+          </main>
+
+          {/* Input */}
+          <footer className="chat-window-footer">
+            <MessageInput onSubmit={handleSend} disabled={state.isGenerating} />
+          </footer>
         </div>
-
-        {/* ===== Chat area ===== */}
-        <main className="flex-1 overflow-y-auto px-6 py-5">
-          <MessageList messages={state.messages} />
-          <LoadingIndicator visible={state.isGenerating} />
-        </main>
-
-        {/* ===== Composer ===== */}
-        <footer className="border-t border-slate-200/70 bg-white/70 px-6 py-4">
-          <MessageInput onSubmit={handleSend} disabled={state.isGenerating} />
-          <p className="mt-2 text-center text-[11px] text-slate-400">
-            המידע מבוסס על אתר הפניקס בלבד • אינו מהווה ייעוץ אישי
-          </p>
-        </footer>
-      </div>
+      )}
     </div>
   );
 }

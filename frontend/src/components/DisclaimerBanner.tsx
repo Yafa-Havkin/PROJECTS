@@ -6,7 +6,7 @@ export default function DisclaimerBanner() {
   if (dismissed) return null;
 
   return (
-    <div className="mt-4 flex items-start gap-2 rounded-xl bg-phoenix-gold/10 px-4 py-2.5 text-xs text-phoenix-navy ring-1 ring-phoenix-gold/30">
+    <div className="mt-4 flex items-start gap-2 rounded-xl bg-phoenix px-4 py-2.5 text-xs text-white ring-1 ring-phoenix">
       <span className="text-sm">ℹ️</span>
       <p className="flex-1 leading-relaxed">
         המידע מבוסס על התוכן הציבורי באתר הפניקס בלבד ואינו מהווה ייעוץ אישי.
