@@ -111,6 +111,9 @@ pytest + Hypothesis.
 
 ## ☁️ פריסה לענן
 
-ראו `DEPLOY.md` למדריך מלא (GitHub + Render).
+הפרויקט פרוס ב-Railway:
+
+- **UI (פרונטאנד):** https://projects-production-77a3.up.railway.app
+- **API (בקאנד):** https://projects-production-5e07.up.railway.app/api/health
 
 <div align="center">🔥 נבנה עבור חברת הפניקס 🔥</div>
