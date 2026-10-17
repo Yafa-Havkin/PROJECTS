@@ -1,0 +1,26 @@
+# Secrets — NEVER commit. Contains the Gemini API keys.
+.env
+
+# Python / build artifacts
+__pycache__/
+*.pyc
+.hypothesis/
+.pytest_cache/
+
+# Node / frontend build output (rebuilt on deploy)
+node_modules/
+dist/
+frontend/node_modules/
+frontend/dist/
+
+# Scratch / log files
+*.log
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+
+# NOTE: data/chroma_db/ is INTENTIONALLY committed. It is the pre-built vector
+# store (~10 MB) that ships with the app so the bot can answer immediately
+# after deploy without re-crawling. Do NOT add it to this ignore list.

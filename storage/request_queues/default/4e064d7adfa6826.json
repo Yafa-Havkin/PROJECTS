@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://digital-content.fnx.co.il/documents/fnx-equal-pay-law-public2025.pdf",
+  "url": "https://digital-content.fnx.co.il/Documents/fnx-equal-pay-law-public2025.pdf",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://digital-content.fnx.co.il/Documents/fnx-equal-pay-law-public2025.pdf",
+  "handled_at": "2026-10-15 15:18:24.029273+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://www.fnx.co.il/documents/premiot_nesiot_yomiot.xls",
+  "url": "https://www.fnx.co.il/Documents/premiot_nesiot_yomiot.xls",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://digital-content.fnx.co.il/Documents/premiot_nesiot_yomiot.xls",
+  "handled_at": "2026-10-15 15:18:26.710757+00:00"
+}

@@ -1,0 +1,17 @@
+# Keep Docker build context small. NOTE: data/chroma_db IS intentionally
+# included so the vector store is baked into the backend image.
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.hypothesis/
+.venv/
+venv/
+frontend/node_modules/
+frontend/dist/
+.env
+.git/
+.gitignore
+.vscode/
+.kiro/
+*.log

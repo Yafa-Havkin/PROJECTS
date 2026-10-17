@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://www.fnx.co.il/mortgage-insurance/mortgage-insurance-info/apartment-race",
+  "url": "https://www.fnx.co.il/mortgage-insurance/mortgage-insurance-info/apartment-race/",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://www.fnx.co.il/mortgage-insurance/mortgage-insurance-info/apartment-race/",
+  "handled_at": "2026-10-15 15:18:10.300537+00:00"
+}

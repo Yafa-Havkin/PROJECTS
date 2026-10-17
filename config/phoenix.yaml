@@ -1,0 +1,15 @@
+# TenantConfig for חברת הפניקס
+# This file drives ALL company-specific settings — no values are hardcoded in source.
+
+tenant_id: phoenix
+company_name: "חברת הפניקס"
+crawl_url: "https://fnx.co.il"
+crawl_max_depth: 1           # depth 1 already covers ~185 pages / ~1800 chunks
+crawl_timeout_minutes: 180   # generous cap so the overnight embedding can finish
+vectorstore_path: "./data/chroma_db"
+default_persona_id: customer
+recrawl_schedule: "0 2 * * 0"  # Every Sunday at 02:00
+
+persona_config_paths:
+  - "config/personas/customer.yaml"
+  - "config/personas/agent.yaml"

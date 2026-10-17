@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://www.fnx.co.il/disability-and-incapacity-to-work/incapacity-to-work",
+  "url": "https://www.fnx.co.il/disability-and-incapacity-to-work/incapacity-to-work/",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://www.fnx.co.il/disability-and-incapacity-to-work/incapacity-to-work/",
+  "handled_at": "2026-10-15 15:17:30.364850+00:00"
+}

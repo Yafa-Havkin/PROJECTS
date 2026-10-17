@@ -1,0 +1,16 @@
+{
+  "unique_key": "https://fnx.co.il",
+  "url": "https://fnx.co.il",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "state": 4
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://www.fnx.co.il/",
+  "handled_at": "2026-10-15 15:17:15.301111+00:00"
+}

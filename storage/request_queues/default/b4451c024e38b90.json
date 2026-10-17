@@ -1,0 +1,18 @@
+{
+  "unique_key": "https://smart.fnx.co.il/travel/client/stageone/whereweflight",
+  "url": "https://smart.fnx.co.il/Travel/client/stageOne/whereWeFlight",
+  "method": "GET",
+  "payload": null,
+  "headers": {},
+  "user_data": {
+    "__crawlee": {
+      "enqueueStrategy": "same-domain",
+      "state": 4,
+      "crawlDepth": 1
+    }
+  },
+  "retry_count": 0,
+  "no_retry": false,
+  "loaded_url": "https://smart.fnx.co.il/Travel/client/stageOne/whereWeFlight",
+  "handled_at": "2026-10-15 15:18:06.454020+00:00"
+}
