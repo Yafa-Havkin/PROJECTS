@@ -13,12 +13,6 @@ services:
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python -m uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
     healthCheckPath: /api/health
-    # Persistent disk so a re-crawl's updated vector store survives restarts /
-    # redeploys. Mounted at the same path the tenant config points to.
-    disk:
-      name: phoenix-data
-      mountPath: /opt/render/project/src/data
-      sizeGB: 1
     envVars:
       - key: PYTHON_VERSION
         value: "3.11.9"
