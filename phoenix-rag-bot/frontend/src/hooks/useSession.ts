@@ -6,6 +6,7 @@
  * Fetch errors are handled gracefully: logged, session id left empty.
  */
 import { useCallback, useEffect, useState } from "react";
+import { apiUrl } from "../api";
 
 interface NewSessionResponse {
   session_id: string;
@@ -17,7 +18,7 @@ interface UseSessionResult {
 }
 
 async function requestNewSession(): Promise<string> {
-  const response = await fetch("/api/session/new", { method: "POST" });
+  const response = await fetch(apiUrl("/api/session/new"), { method: "POST" });
   if (!response.ok) {
     throw new Error(`session/new failed with status ${response.status}`);
   }

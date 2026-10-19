@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { ChatState, Message, PersonaInfo } from "./types";
+import { apiUrl } from "./api";
 import { useSession } from "./hooks/useSession";
 import { useChat } from "./hooks/useChat";
 import DisclaimerBanner from "./components/DisclaimerBanner";
@@ -44,7 +45,7 @@ function App() {
     let cancelled = false;
     (async () => {
       try {
-        const response = await fetch("/api/personas");
+        const response = await fetch(apiUrl("/api/personas"));
         if (!response.ok) throw new Error(`status ${response.status}`);
         const data = (await response.json()) as PersonasResponse;
         if (cancelled) return;

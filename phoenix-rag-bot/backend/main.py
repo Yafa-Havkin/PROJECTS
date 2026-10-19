@@ -43,7 +43,10 @@ _ENV_TENANT_CONFIG = "PHOENIX_TENANT_CONFIG"
 _DEFAULT_TENANT_CONFIG = "config/phoenix.yaml"
 _ENV_API_KEY = "GEMINI_API_KEY"
 _ENV_CORS_ORIGINS = "PHOENIX_CORS_ORIGINS"
-_DEFAULT_CORS_ORIGINS = "http://localhost:5173,http://localhost:3000"
+_DEFAULT_CORS_ORIGINS = (
+    "http://localhost:5173,http://localhost:3000,"
+    "https://projects-production-77a3.up.railway.app"
+)
 
 #: Opt-in flag for the in-process scheduled re-crawl. Off by default so the API
 #: server and the (CPU/quota-heavy) crawl are decoupled unless explicitly asked.

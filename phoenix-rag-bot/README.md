@@ -125,9 +125,19 @@ pytest + Hypothesis.
 
 ## ☁️ פריסה לענן
 
-הפרויקט פרוס ב-Railway:
+הפרויקט פרוס ב-Railway כשירותי Frontend ו-Backend נפרדים:
 
-- **UI (פרונטאנד):** https://projects-production-77a3.up.railway.app
-- **API (בקאנד):** https://projects-production-5e07.up.railway.app/api/health
+- **קישור למשתמשים (Frontend):** https://projects-production-77a3.up.railway.app
+- **Backend (בדיקת תקינות):** https://projects-production-5e07.up.railway.app/api/health
+
+ה-Frontend שולח בקשות API לכתובת ה-Backend שלמעלה. ב-Railway אפשר להגדיר
+בשירות ה-Frontend משתנה `VITE_API_BASE_URL` עם הערך
+`https://projects-production-5e07.up.railway.app`; אם המשתנה לא מוגדר, כתובת זו
+משמשת כברירת מחדל בבניית production. לאחר שינוי משתנה, יש לפרוס מחדש את ה-Frontend
+כדי ש-Vite יכלול אותו בבנייה.
+
+ה-Backend מאפשר כברירת מחדל בקשות מה-Frontend המקומי ומדומיין ה-Railway שמעל.
+אם משנים את דומיין ה-Frontend, יש לעדכן את `PHOENIX_CORS_ORIGINS` בשירות ה-Backend
+כך שיכלול את כתובת ה-Frontend החדשה.
 
 <div align="center">🔥 נבנה עבור חברת הפניקס 🔥</div>

@@ -12,6 +12,7 @@
  * is called with a Hebrew message and onDone is NOT called.
  */
 import { useCallback } from "react";
+import { apiUrl } from "../api";
 import type { SSEEvent } from "../types";
 
 const GENERIC_ERROR_MESSAGE = "אירעה שגיאה זמנית בשירות. אנא נסו שוב מאוחר יותר.";
@@ -54,7 +55,7 @@ export function useChat(callbacks: UseChatCallbacks): UseChatResult {
     async ({ sessionId, query, personaId }: SendMessageParams): Promise<void> => {
       let response: Response;
       try {
-        response = await fetch("/api/chat", {
+        response = await fetch(apiUrl("/api/chat"), {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
