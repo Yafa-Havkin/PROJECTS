@@ -8,10 +8,11 @@ services:
   # --- Backend: FastAPI + ChromaDB (Python web service) --------------------
   - type: web
     name: phoenix-backend
+    rootDir: phoenix-rag-bot
     runtime: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python -m uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
-    healthCheckPath: /api/health
+    healthCheckPath: /api/ready
     envVars:
       - key: PYTHON_VERSION
         value: "3.11.9"
@@ -39,9 +40,13 @@ services:
   # --- Frontend: React SPA served as a static site -------------------------
   - type: web
     name: phoenix-frontend
+    rootDir: phoenix-rag-bot
     runtime: static
     buildCommand: "cd frontend && npm install && npm run build"
     staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://phoenix-backend.onrender.com
     routes:
       - type: rewrite
         source: /api/*

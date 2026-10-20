@@ -25,18 +25,19 @@ git push -u origin main
 
 ## שלב 2 — לפרוס ב-Render
 
-1. היכנסי ל-https://render.com והירשמי עם GitHub.
-2. **New ▸ Blueprint** ▸ בחרי את ה-repo. Render יזהה את `render.yaml` ויציג
-   את `phoenix-backend` ו-`phoenix-frontend`.
-3. **Apply** — Render יבנה ויפרוס את שניהם.
+1. היכנסי ל-https://render.com עם GitHub ובחרי **New ▸ Blueprint**.
+2. בחרי את המאגר `PROJECTS` ובשדה **Blueprint Path** הזיני
+   `phoenix-rag-bot/render.yaml`.
+3. במסך האישור, הזיני את חמשת ערכי Gemini כש-Render מבקש את משתני הסוד:
+   `GEMINI_API_KEY`, `GEMINI_API_KEY_2`, `GEMINI_API_KEY_3`,
+   `GEMINI_API_KEY_4`, `GEMINI_API_KEY_5`. אין להכניס את הערכים לקובץ YAML
+   או לצ'אט.
+4. לחצי **Deploy Blueprint**. ה-Blueprint מגדיר את תיקיית השורש של שני
+   השירותים, את כתובת ה-API של ה-Frontend, ובדיקת מוכנות שמונעת הצגת שירות
+   ריק כתקין.
 
----
-
-## שלב 3 — להזין מפתחות (סודות)
-
-ב-Render ▸ שירות **phoenix-backend** ▸ **Environment** ▸ הוסיפי:
-`GEMINI_API_KEY`, `GEMINI_API_KEY_2` … `GEMINI_API_KEY_5` (אותם ערכים כמו ב-`.env`).
-שמרי — Render יפעיל מחדש אוטומטית.
+אם ה-Blueprint כבר נוצר ולא התבקשת להזין סודות, הוסיפי אותם ידנית ב-
+**phoenix-backend ▸ Environment**. שמירת משתני סביבה תפעיל פריסה מחדש.
 
 ---
 
@@ -54,4 +55,5 @@ git push -u origin main
 - **Free tier נרדם** אחרי ~15 דק' חוסר שימוש; הבקשה הראשונה אחרי זה ~30–50 שניות.
   לפני ההדגמה — פתחי את הכתובת פעם אחת כדי "להעיר".
 - **אבטחה:** אחרי האקתון מומלץ לבטל/להחליף את המפתחות (היו גלויים על המסך).
-- אם שינית את שם הבקאנד ב-Render, עדכני את כתובת ה-rewrite ב-`render.yaml`.
+- אם Render הוסיף סיומת לשם השירות או אם שינית את שם הבקאנד, עדכני את
+  `VITE_API_BASE_URL` ואת כתובת ה-rewrite ב-`render.yaml` בהתאם.

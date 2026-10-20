@@ -125,7 +125,9 @@ pytest + Hypothesis.
 
 ## ☁️ פריסה לענן
 
-הפרויקט פרוס ב-Railway כשירותי Frontend ו-Backend נפרדים:
+הפרויקט פרוס ב-Railway כשירותי Frontend ו-Backend נפרדים. קיימת גם תצורת
+Blueprint חלופית ל-Render בקובץ [DEPLOY.md](./DEPLOY.md); יש לציין את הנתיב
+`phoenix-rag-bot/render.yaml` בעת יצירת ה-Blueprint מתוך המאגר.
 
 - **קישור למשתמשים (Frontend):** https://projects-production-77a3.up.railway.app
 - **Backend (בדיקת תקינות):** https://projects-production-5e07.up.railway.app/api/health
