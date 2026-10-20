@@ -15,7 +15,7 @@ from collections.abc import AsyncGenerator
 from dataclasses import dataclass
 
 from fastapi import APIRouter
-from fastapi.responses import StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 
 from backend.api.models import (
     ChatRequest,
@@ -31,6 +31,7 @@ from backend.api.models import (
 )
 from backend.config.loader import ConfigLoader
 from backend.generator.generator import BACKEND_ERROR_MESSAGE, AnswerGenerator
+from backend.indexer.vectorstore import ChromaVectorStore
 from backend.models import NoContentSignal, ScoredChunk
 from backend.retriever.retriever import HybridRetriever
 from backend.session.manager import SessionManager
@@ -52,6 +53,8 @@ class AppServices:
     session_manager: SessionManager
     retriever: HybridRetriever
     generator: AnswerGenerator
+    vectorstore: ChromaVectorStore
+    gemini_api_key_configured: bool
 
 
 _services: AppServices | None = None
@@ -77,6 +80,29 @@ router = APIRouter(prefix="/api")
 async def health() -> HealthResponse:
     """Liveness probe."""
     return HealthResponse(status="ok")
+
+
+@router.get("/ready")
+async def readiness() -> JSONResponse:
+    """Report whether the bot has an index and can call Gemini."""
+    services = get_services()
+    indexed_chunks = services.vectorstore.count()
+    issues: list[str] = []
+    if indexed_chunks == 0:
+        issues.append("vector_store_empty")
+    if not services.gemini_api_key_configured:
+        issues.append("gemini_api_key_missing")
+
+    ready = not issues
+    return JSONResponse(
+        status_code=200 if ready else 503,
+        content={
+            "status": "ready" if ready else "not_ready",
+            "indexed_chunks": indexed_chunks,
+            "gemini_api_key_configured": services.gemini_api_key_configured,
+            "issues": issues,
+        },
+    )
 
 
 @router.get("/personas", response_model=PersonasResponse)
@@ -112,6 +138,12 @@ async def chat(request: ChatRequest) -> StreamingResponse:
 
         try:
             result = await services.retriever.retrieve(request.query)
+            if (
+                isinstance(result, NoContentSignal)
+                and result.reason == "retrieval_error"
+            ):
+                yield sse_format(ErrorEvent(message=BACKEND_ERROR_MESSAGE))
+                return
 
             answer_parts: list[str] = []
             async for token in services.generator.generate_stream(

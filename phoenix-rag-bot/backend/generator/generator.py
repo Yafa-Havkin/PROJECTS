@@ -67,7 +67,17 @@ class AnswerGenerator:
         produced no relevant content. On an LLM failure yields the Hebrew error
         message rather than raising.
         """
-        if isinstance(retrieval, NoContentSignal) or not retrieval:
+        if isinstance(retrieval, NoContentSignal):
+            if retrieval.reason == "retrieval_error":
+                logger.error(
+                    "Retrieval failed; returning backend error instead of not-found."
+                )
+                yield BACKEND_ERROR_MESSAGE
+                return
+            logger.info("No relevant content; returning not-found message without LLM call.")
+            yield NOT_FOUND_MESSAGE
+            return
+        if not retrieval:
             logger.info("No relevant content; returning not-found message without LLM call.")
             yield NOT_FOUND_MESSAGE
             return

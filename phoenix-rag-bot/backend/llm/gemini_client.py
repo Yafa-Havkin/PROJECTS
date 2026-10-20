@@ -109,6 +109,11 @@ class GeminiClient:
                 self._read_timeout,
             )
 
+    @property
+    def has_api_keys(self) -> bool:
+        """Whether at least one Gemini API key is configured."""
+        return bool(self._api_keys)
+
     # ------------------------------------------------------------------ #
     # Embedding
     # ------------------------------------------------------------------ #

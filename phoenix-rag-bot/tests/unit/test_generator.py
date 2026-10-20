@@ -43,6 +43,20 @@ def test_no_content_returns_not_found_without_llm():
     assert client.stream_calls == 0  # LLM must NOT be called
 
 
+def test_retrieval_error_returns_backend_error_without_llm():
+    client = FakeGeminiClient()
+    gen = AnswerGenerator(_tenant(), client=client)
+    out = asyncio.run(
+        _collect(
+            gen.generate_stream(
+                "q", NoContentSignal(reason="retrieval_error"), _persona(), []
+            )
+        )
+    )
+    assert out == BACKEND_ERROR_MESSAGE
+    assert client.stream_calls == 0
+
+
 def test_empty_list_returns_not_found():
     gen = AnswerGenerator(_tenant(), client=FakeGeminiClient())
     out = asyncio.run(_collect(gen.generate_stream("q", [], _persona(), [])))

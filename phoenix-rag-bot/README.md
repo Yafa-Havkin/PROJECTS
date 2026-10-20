@@ -129,6 +129,11 @@ pytest + Hypothesis.
 
 - **קישור למשתמשים (Frontend):** https://projects-production-77a3.up.railway.app
 - **Backend (בדיקת תקינות):** https://projects-production-5e07.up.railway.app/api/health
+- **Backend (בדיקת מוכנות לבוט):** https://projects-production-5e07.up.railway.app/api/ready
+
+בדיקת `/api/ready` מחזירה `200` רק כשמאגר הידע אינו ריק ומוגדר מפתח Gemini.
+בתשובת `503` יש לבדוק את `issues`: `vector_store_empty` מצביע על מאגר שלא
+נפרס, ו-`gemini_api_key_missing` מצביע על משתנה סביבה חסר בשירות הבקאנד.
 
 ה-Frontend שולח בקשות API לכתובת ה-Backend שלמעלה. ב-Railway אפשר להגדיר
 בשירות ה-Frontend משתנה `VITE_API_BASE_URL` עם הערך

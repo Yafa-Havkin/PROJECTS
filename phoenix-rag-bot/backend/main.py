@@ -172,6 +172,8 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
             session_manager=session_manager,
             retriever=retriever,
             generator=generator,
+            vectorstore=vectorstore,
+            gemini_api_key_configured=gemini_client.has_api_keys,
         )
     )
 

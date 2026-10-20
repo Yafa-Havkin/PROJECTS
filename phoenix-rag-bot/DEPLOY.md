@@ -43,6 +43,8 @@ git push -u origin main
 ## שלב 4 — לבדוק
 
 - בריאות: `https://phoenix-backend.onrender.com/api/health` → `{"status":"ok"}`
+- מוכנות: `https://phoenix-backend.onrender.com/api/ready` → `200` כשהאינדקס ומפתח Gemini זמינים.
+  אם מתקבל `503`, יש לבדוק את `issues` בתגובה: מאגר ריק או מפתח Gemini חסר.
 - הבוט: `https://phoenix-frontend.onrender.com` — זה ה-URL לשופטים. 🎉
 
 ---
