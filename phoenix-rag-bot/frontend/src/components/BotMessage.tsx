@@ -1,4 +1,5 @@
 import type { Message } from "../types";
+import { sanitizeAnswerContent } from "../utils/sanitizeAnswerContent";
 
 interface Props {
   message: Message;
@@ -23,7 +24,7 @@ export default function BotMessage({ message, showEvidence = false }: Props) {
         ].join(" ")}
       >
         <p className="whitespace-pre-wrap break-words text-[15px] leading-relaxed">
-          {message.content}
+          {sanitizeAnswerContent(message.content)}
           {message.isStreaming && (
             <span className="ms-0.5 inline-block h-4 w-1.5 animate-pulse bg-phoenix align-middle" />
           )}
