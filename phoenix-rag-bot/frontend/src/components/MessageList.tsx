@@ -3,8 +3,13 @@ import type { Message } from "../types";
 import UserMessage from "./UserMessage";
 import BotMessage from "./BotMessage";
 
+interface Props {
+  messages: Message[];
+  showEvidence?: boolean;
+}
+
 /** Renders the conversation; auto-scrolls to the newest message. */
-export default function MessageList({ messages }: { messages: Message[] }) {
+export default function MessageList({ messages, showEvidence = false }: Props) {
   const endRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -34,7 +39,7 @@ export default function MessageList({ messages }: { messages: Message[] }) {
         m.role === "user" ? (
           <UserMessage key={m.id} message={m} />
         ) : (
-          <BotMessage key={m.id} message={m} />
+          <BotMessage key={m.id} message={m} showEvidence={showEvidence} />
         )
       )}
       <div ref={endRef} />

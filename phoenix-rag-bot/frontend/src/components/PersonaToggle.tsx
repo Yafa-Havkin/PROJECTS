@@ -29,6 +29,8 @@ export default function PersonaToggle({
             type="button"
             onClick={() => onChange(p.persona_id)}
             disabled={disabled}
+            aria-pressed={active}
+            data-persona={p.persona_id}
             className={[
               "rounded-full px-4 py-1.5 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-60",
               active

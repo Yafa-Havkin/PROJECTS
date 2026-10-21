@@ -42,6 +42,17 @@ function App() {
   }, [sessionId]);
 
   useEffect(() => {
+    if (!chatOpen) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setChatOpen(false);
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [chatOpen]);
+
+  useEffect(() => {
     let cancelled = false;
     (async () => {
       try {
@@ -182,10 +193,20 @@ function App() {
       </div>
 
       {/* ===== Chat bubble button ===== */}
+      {chatOpen && (
+        <button
+          type="button"
+          className="chat-backdrop"
+          onClick={() => setChatOpen(false)}
+          aria-label="סגירת הצ׳אט"
+        />
+      )}
       <button
         onClick={() => setChatOpen((o) => !o)}
         className="chat-bubble-btn"
         aria-label="פתח צ'אט"
+        aria-expanded={chatOpen}
+        aria-controls="phoenix-chat-window"
       >
         {chatOpen ? (
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
@@ -202,14 +223,29 @@ function App() {
 
       {/* ===== Chat window ===== */}
       {chatOpen && (
-        <div className={chatExpanded ? "chat-window chat-window--expanded" : "chat-window"} dir="rtl">
+        <div
+          id="phoenix-chat-window"
+          role="dialog"
+          aria-label="עוזר הפניקס"
+          aria-modal="true"
+          className={[
+            "chat-window",
+            chatExpanded && "chat-window--expanded",
+            state.activePersonaId === "agent" && "chat-window--agent",
+          ].filter(Boolean).join(" ")}
+          dir="rtl"
+        >
           {/* Header */}
           <header className="chat-window-header">
             <div className="flex items-center gap-2">
               <span className="text-xl">🔥</span>
               <div>
                 <div className="font-bold text-sm">עוזר הפניקס</div>
-                <div className="text-xs text-white/70">מבוסס בינה מלאכותית</div>
+                <div className="text-xs text-white/75">
+                  {state.activePersonaId === "agent"
+                    ? "מצב סוכן · מקצועי ומפורט"
+                    : "מצב לקוח · ברור ונגיש"}
+                </div>
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -263,7 +299,10 @@ function App() {
 
           {/* Messages */}
           <main className="chat-window-messages">
-            <MessageList messages={state.messages} />
+            <MessageList
+              messages={state.messages}
+              showEvidence={state.activePersonaId === "agent"}
+            />
             <LoadingIndicator visible={state.isGenerating} />
           </main>
 
