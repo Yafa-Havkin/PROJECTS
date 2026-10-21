@@ -1,9 +1,23 @@
-# 🚀 העלאה לענן — Phoenix RAG Bot (GitHub + Render)
+# 🚀 העלאה לענן — Phoenix RAG Bot
 
-מדריך קצר להעלאת הבוט לענן כך שיהיה נגיש מכל מקום (דרישת ההאקתון ☁️).
-GitHub לקוד + Render להרצה (פשוט, free tier, בלי כרטיס אשראי).
+הפרויקט תומך בפריסה ב-Railway, ב-Render וב-Vercel. אין להכניס מפתחות API
+לקובצי הקוד או לצ'אט.
 
-הכול כבר מוכן: `render.yaml`, `.gitignore` מעודכן, ו-CORS שתומך בפריסה.
+## Vercel
+
+1. ייבאי ל-Vercel את המאגר `Yafa-Havkin/PROJECTS` ובחרי את תיקיית השורש
+   `phoenix-rag-bot`.
+2. ודאי שהפרויקט משתמש ב-Python 3.12. קובץ `pyproject.toml` מגדיר את נקודת
+   הכניסה ואת פקודת בניית ה-Frontend.
+3. ב-Settings → Environment Variables הוסיפי `VITE_API_BASE_URL` עם הערך
+   `same-origin`, ואת הסודות `GEMINI_API_KEY`, `GEMINI_API_KEY_2`,
+   `GEMINI_API_KEY_3`, `GEMINI_API_KEY_4`, `GEMINI_API_KEY_5`.
+4. פרסי מחדש ובדקי ש-`/api/ready` מחזיר `200` עם `indexed_chunks` גדול מאפס.
+   לאחר מכן שלחי שאלה שהאתר מכסה וודאי שמתקבלים מקורות.
+
+ה-Frontend וה-API מוגשים מאותו דומיין. אינדקס Chroma מועתק בזמן ההפעלה לאחסון
+זמני שניתן לכתיבה, מאחר שמערכת הקבצים של פונקציית הענן אינה מיועדת לעדכון
+אינדקס המקור.
 
 ---
 

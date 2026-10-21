@@ -18,8 +18,11 @@ from __future__ import annotations
 
 import logging
 import os
+import shutil
+import tempfile
 from contextlib import asynccontextmanager
 from collections.abc import AsyncIterator
+from pathlib import Path
 
 from dotenv import load_dotenv
 
@@ -68,6 +71,21 @@ def _parse_cors_origins() -> list[str]:
 def _env_truthy(name: str) -> bool:
     """Return True when the named env var is set to a truthy string."""
     return os.environ.get(name, "").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def _runtime_vectorstore_path(path: str) -> str:
+    """Copy the bundled Chroma index to writable storage on Vercel."""
+    if not os.environ.get("VERCEL"):
+        return path
+
+    source = Path(path).resolve()
+    if not source.is_dir():
+        raise FileNotFoundError(f"Bundled Chroma index not found: {source}")
+
+    runtime_path = Path(tempfile.gettempdir()) / "phoenix-rag-bot-chroma"
+    if not runtime_path.exists():
+        shutil.copytree(source, runtime_path)
+    return str(runtime_path)
 
 
 def _maybe_start_scheduler(tenant_path: str, tenant):  # type: ignore[no-untyped-def]
@@ -133,16 +151,17 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 
     config_loader = ConfigLoader(tenant_path)
     tenant = config_loader.load_tenant()
+    vectorstore_path = _runtime_vectorstore_path(tenant.vectorstore_path)
 
     try:
-        vectorstore = ChromaVectorStore(tenant.vectorstore_path)
+        vectorstore = ChromaVectorStore(vectorstore_path)
         chunk_count = vectorstore.count()
     except Exception:  # noqa: BLE001
         logger.exception(
             "Failed to open ChromaDB at %s; starting with an empty store.",
-            tenant.vectorstore_path,
+            vectorstore_path,
         )
-        vectorstore = ChromaVectorStore(tenant.vectorstore_path)
+        vectorstore = ChromaVectorStore(vectorstore_path)
         chunk_count = 0
 
     if chunk_count == 0:
@@ -224,6 +243,15 @@ def create_app() -> FastAPI:
         )
 
     app.include_router(router)
+    frontend_dist = Path(__file__).resolve().parents[1] / "frontend" / "dist"
+    if frontend_dist.is_dir():
+        from fastapi.staticfiles import StaticFiles
+
+        app.mount(
+            "/",
+            StaticFiles(directory=frontend_dist, html=True),
+            name="frontend",
+        )
     return app
 
 

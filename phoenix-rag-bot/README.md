@@ -125,9 +125,10 @@ pytest + Hypothesis.
 
 ## ☁️ פריסה לענן
 
-הפרויקט פרוס ב-Railway כשירותי Frontend ו-Backend נפרדים. קיימת גם תצורת
-Blueprint חלופית ל-Render בקובץ [DEPLOY.md](./DEPLOY.md); יש לציין את הנתיב
-`phoenix-rag-bot/render.yaml` בעת יצירת ה-Blueprint מתוך המאגר.
+הפרויקט פרוס ב-Railway כשירותי Frontend ו-Backend נפרדים. קיימות גם תצורות
+חלופיות ל-Render ול-Vercel. לפריסת Vercel יש להשתמש בשורש המאגר
+`phoenix-rag-bot` ולהגדיר `VITE_API_BASE_URL=same-origin` ואת מפתחות Gemini
+בהגדרות הפרויקט. פרטים נמצאים ב-[DEPLOY.md](./DEPLOY.md).
 
 - **קישור למשתמשים (Frontend):** https://projects-production-77a3.up.railway.app
 - **Backend (בדיקת תקינות):** https://projects-production-5e07.up.railway.app/api/health
