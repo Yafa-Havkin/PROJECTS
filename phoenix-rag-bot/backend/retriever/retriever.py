@@ -13,6 +13,8 @@ from __future__ import annotations
 import asyncio
 import logging
 import time
+import unicodedata
+from collections import OrderedDict
 
 from backend.indexer.embedder import Embedder
 from backend.indexer.vectorstore import ChromaVectorStore
@@ -24,8 +26,52 @@ RRF_K: int = 60
 DEFAULT_TOP_K: int = 10
 VECTOR_SEARCH_K: int = 10
 BM25_SEARCH_K: int = 10
+RETRIEVAL_CACHE_TTL_SECONDS: float = 300.0
+RETRIEVAL_CACHE_MAX_ENTRIES: int = 128
 
 logger = logging.getLogger("phoenix_rag_bot.retriever")
+
+
+class _RetrievalCache:
+    """Bounded, process-local cache for recently successful normalized queries."""
+
+    def __init__(
+        self,
+        max_entries: int = RETRIEVAL_CACHE_MAX_ENTRIES,
+        ttl_seconds: float = RETRIEVAL_CACHE_TTL_SECONDS,
+    ) -> None:
+        self._max_entries = max_entries
+        self._ttl_seconds = ttl_seconds
+        self._entries: OrderedDict[
+            tuple[str, int], tuple[float, list[ScoredChunk]]
+        ] = OrderedDict()
+
+    def get(self, query: str, top_k: int) -> list[ScoredChunk] | None:
+        key = (self._normalize_query(query), top_k)
+        entry = self._entries.get(key)
+        if entry is None:
+            return None
+
+        expires_at, results = entry
+        if expires_at <= time.monotonic():
+            del self._entries[key]
+            return None
+
+        self._entries.move_to_end(key)
+        return list(results)
+
+    def put(self, query: str, top_k: int, results: list[ScoredChunk]) -> None:
+        key = (self._normalize_query(query), top_k)
+        self._entries[key] = (time.monotonic() + self._ttl_seconds, list(results))
+        self._entries.move_to_end(key)
+        while len(self._entries) > self._max_entries:
+            self._entries.popitem(last=False)
+
+    @staticmethod
+    def _normalize_query(query: str) -> str:
+        normalized = unicodedata.normalize("NFKC", query).casefold()
+        normalized = " ".join(normalized.split())
+        return normalized.rstrip("?!.,:; ")
 
 
 class HybridRetriever:
@@ -42,6 +88,7 @@ class HybridRetriever:
         self._bm25_index = bm25_index
         self._embedder = embedder
         self._reranker = reranker
+        self._cache = _RetrievalCache()
 
     async def retrieve(
         self, query: str, top_k: int = DEFAULT_TOP_K
@@ -58,6 +105,14 @@ class HybridRetriever:
                 outcome,
                 result_count,
             )
+
+        cached = self._cache.get(query, top_k)
+        if cached is not None:
+            logger.info("retrieval_cache_hit results=%d", len(cached))
+            outcome = "cache_hit"
+            result_count = len(cached)
+            log_completion()
+            return cached
 
         try:
             vector_task = asyncio.to_thread(self._vector_search, query)
@@ -88,6 +143,17 @@ class HybridRetriever:
             log_completion()
             return NoContentSignal(reason="no_relevant_content")
 
+        if len(merged) == 1:
+            logger.info(
+                "retrieval_route route=single_candidate_direct candidates=1 "
+                "reranker_skipped=true"
+            )
+            result_count = 1
+            outcome = "ok"
+            self._cache.put(query, top_k, merged)
+            log_completion()
+            return merged
+
         rerank_started_at = time.perf_counter()
         reranked = await self._reranker.rerank(query, merged)
         logger.info(
@@ -108,6 +174,7 @@ class HybridRetriever:
 
         outcome = "ok"
         result_count = len(reranked)
+        self._cache.put(query, top_k, reranked)
         log_completion()
         return reranked
 

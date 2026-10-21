@@ -302,6 +302,9 @@ function App() {
             <MessageList
               messages={state.messages}
               showEvidence={state.activePersonaId === "agent"}
+              personaId={state.activePersonaId}
+              disabled={state.isGenerating}
+              onQuestion={handleSend}
             />
             <LoadingIndicator visible={state.isGenerating} />
           </main>

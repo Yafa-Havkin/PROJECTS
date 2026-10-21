@@ -1,15 +1,37 @@
 import type { Message } from "../types";
 import { sanitizeAnswerContent } from "../utils/sanitizeAnswerContent";
+import { getFollowUpQuestions } from "../utils/followUpQuestions";
 
 interface Props {
   message: Message;
   showEvidence?: boolean;
+  onQuestion?: (question: string) => void;
+  disabled?: boolean;
 }
 
 /** The bot's chat bubble (left-aligned) with optional sources list. */
-export default function BotMessage({ message, showEvidence = false }: Props) {
+export default function BotMessage({
+  message,
+  showEvidence = false,
+  onQuestion,
+  disabled = false,
+}: Props) {
   const isError = message.isError;
   const hasSources = (message.sources?.length ?? 0) > 0;
+  const followUpQuestions = message.sources
+    ? getFollowUpQuestions(message.sources)
+    : [];
+  const trustedSource = message.sources?.find((source) => {
+    try {
+      const url = new URL(source);
+      return (
+        url.protocol === "https:" &&
+        (url.hostname === "fnx.co.il" || url.hostname.endsWith(".fnx.co.il"))
+      );
+    } catch {
+      return false;
+    }
+  });
   return (
     <div className="flex animate-fade-in items-start gap-2">
       <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-phoenix-glow via-phoenix to-phoenix-dark text-sm">
@@ -68,6 +90,42 @@ export default function BotMessage({ message, showEvidence = false }: Props) {
                 </li>
               ))}
             </ul>
+          </div>
+        )}
+
+        {trustedSource && !isError && !message.isStreaming && (
+          <a
+            href={trustedSource}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 flex items-center justify-between gap-3 rounded-xl border border-phoenix/15 bg-orange-50/70 px-3 py-2.5 text-sm text-phoenix-navy transition hover:border-phoenix/40 hover:bg-orange-50"
+          >
+            <span>
+              <span className="block font-semibold">מידע נוסף באתר הפניקס</span>
+              <span className="text-xs text-slate-500">פתיחת עמוד המקור</span>
+            </span>
+            <span aria-hidden="true" className="text-phoenix">←</span>
+          </a>
+        )}
+
+        {followUpQuestions.length > 0 && !isError && !message.isStreaming && (
+          <div className="mt-3">
+            <p className="mb-2 text-xs font-semibold text-slate-500">
+              אפשר להמשיך ולשאול
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {followUpQuestions.map((question) => (
+                <button
+                  key={question}
+                  type="button"
+                  onClick={() => onQuestion?.(question)}
+                  disabled={disabled}
+                  className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs text-phoenix-navy transition hover:border-phoenix/50 hover:bg-orange-50 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {question}
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </div>
