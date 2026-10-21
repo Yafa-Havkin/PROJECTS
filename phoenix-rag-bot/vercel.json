@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
+  "buildCommand": "python -m pip install -r requirements.txt && cd frontend && npm ci && npm run build",
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "backend/**,config/**,data/chroma_db/**,frontend/dist/**"
+    }
+  }
+}
