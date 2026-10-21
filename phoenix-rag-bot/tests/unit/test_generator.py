@@ -77,3 +77,16 @@ def test_llm_failure_yields_hebrew_error():
     cands = [scored("https://fnx.co.il/a", "תוכן", 0.9)]
     out = asyncio.run(_collect(gen.generate_stream("q", cands, _persona(), [])))
     assert out == BACKEND_ERROR_MESSAGE
+
+
+def test_prompt_does_not_allow_substituting_a_different_insurance_type():
+    gen = AnswerGenerator(_tenant(), client=FakeGeminiClient())
+    prompt = gen._build_prompt(
+        "האם יש ביטוח בריאות משפחתי?",
+        [scored("https://fnx.co.il/travel", "ביטוח נסיעות קבוצתי", 0.9)],
+        _persona(),
+        [],
+    )
+
+    assert "אל תענה עליה בעזרת מקור שמתאר סוג ביטוח אחר" in prompt
+    assert "אמור שאין לך מידע מספיק בנושא" in prompt
