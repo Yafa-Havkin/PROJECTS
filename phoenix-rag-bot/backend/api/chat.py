@@ -11,6 +11,7 @@ Chat API endpoints for the Phoenix RAG Bot.
 from __future__ import annotations
 
 import logging
+import time
 from collections.abc import AsyncGenerator
 from dataclasses import dataclass
 
@@ -130,6 +131,7 @@ async def chat(request: ChatRequest) -> StreamingResponse:
     services = get_services()
 
     async def event_generator() -> AsyncGenerator[str, None]:
+        started_at = time.perf_counter()
         services.session_manager.update_persona(request.session_id, request.persona_id)
         services.session_manager.add_turn(request.session_id, "user", request.query)
 
@@ -137,7 +139,13 @@ async def chat(request: ChatRequest) -> StreamingResponse:
         history = services.session_manager.get_history(request.session_id)
 
         try:
+            retrieval_started_at = time.perf_counter()
             result = await services.retriever.retrieve(request.query)
+            logger.info(
+                "chat_stage stage=retrieval duration_ms=%.1f outcome=%s",
+                (time.perf_counter() - retrieval_started_at) * 1000,
+                "no_content" if isinstance(result, NoContentSignal) else "ok",
+            )
             if (
                 isinstance(result, NoContentSignal)
                 and result.reason == "retrieval_error"
@@ -146,12 +154,24 @@ async def chat(request: ChatRequest) -> StreamingResponse:
                 return
 
             answer_parts: list[str] = []
+            generation_started_at = time.perf_counter()
+            first_token = True
             async for token in services.generator.generate_stream(
                 request.query, result, persona, history
             ):
+                if first_token:
+                    logger.info(
+                        "chat_stage stage=time_to_first_token duration_ms=%.1f",
+                        (time.perf_counter() - generation_started_at) * 1000,
+                    )
+                    first_token = False
                 answer_parts.append(token)
                 yield sse_format(TokenEvent(content=token))
 
+            logger.info(
+                "chat_stage stage=generation duration_ms=%.1f",
+                (time.perf_counter() - generation_started_at) * 1000,
+            )
             source_urls = _extract_source_urls(result)
             yield sse_format(SourcesEvent(urls=source_urls))
 
@@ -159,6 +179,10 @@ async def chat(request: ChatRequest) -> StreamingResponse:
                 request.session_id, "assistant", "".join(answer_parts)
             )
             yield sse_format(DoneEvent())
+            logger.info(
+                "chat_stage stage=complete duration_ms=%.1f",
+                (time.perf_counter() - started_at) * 1000,
+            )
         except Exception:  # noqa: BLE001
             logger.error(
                 "Chat stream failed for session %s", request.session_id, exc_info=True
