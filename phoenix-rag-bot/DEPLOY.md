@@ -9,6 +9,8 @@
    `phoenix-rag-bot`.
 2. ודאי שהפרויקט משתמש ב-Python 3.12. קובץ `pyproject.toml` מגדיר את נקודת
    הכניסה ואת פקודת בניית ה-Frontend.
+   `requirements.txt` מכיל רק תלויות שרת; תלויות הסריקה והבדיקות מופרדות כדי
+   לא לחרוג ממגבלת גודל ה-Function של Vercel.
 3. ב-Settings → Environment Variables הוסיפי `VITE_API_BASE_URL` עם הערך
    `same-origin`, ואת הסודות `GEMINI_API_KEY`, `GEMINI_API_KEY_2`,
    `GEMINI_API_KEY_3`, `GEMINI_API_KEY_4`, `GEMINI_API_KEY_5`.

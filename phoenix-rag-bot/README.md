@@ -88,8 +88,8 @@ python -m backend.crawler.cli --tenant config/phoenix.yaml --sync   # ריסרי
 ## 🚀 הרצה מקומית
 
 ```bash
-# 1. התקנת תלויות
-pip install -r requirements.txt
+# 1. התקנת תלויות לשרת, לסריקה ולבדיקות
+pip install -r requirements-dev.txt
 
 # 2. מפתחות — להעתיק .env.example ל-.env ולמלא GEMINI_API_KEY
 copy .env.example .env
@@ -126,7 +126,9 @@ pytest + Hypothesis.
 ## ☁️ פריסה לענן
 
 הפרויקט פרוס ב-Railway כשירותי Frontend ו-Backend נפרדים. קיימות גם תצורות
-חלופיות ל-Render ול-Vercel. לפריסת Vercel יש להשתמש בשורש המאגר
+חלופיות ל-Render ול-Vercel. קובץ `requirements.txt` מכיל רק תלויות שרת כדי
+להישאר בגבולות חבילת ה-Serverless; תלויות הסריקה והבדיקות נמצאות בקובצי
+`requirements-crawler.txt` ו-`requirements-dev.txt`. לפריסת Vercel יש להשתמש בשורש המאגר
 `phoenix-rag-bot` ולהגדיר `VITE_API_BASE_URL=same-origin` ואת מפתחות Gemini
 בהגדרות הפרויקט. פרטים נמצאים ב-[DEPLOY.md](./DEPLOY.md).
 

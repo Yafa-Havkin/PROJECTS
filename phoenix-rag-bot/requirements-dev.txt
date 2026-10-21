@@ -1,0 +1,6 @@
+-r requirements-crawler.txt
+hypothesis==6.122.3
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-httpserver==1.1.0
+pip-system-certs==5.3
