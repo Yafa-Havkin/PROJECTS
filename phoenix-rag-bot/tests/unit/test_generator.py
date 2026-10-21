@@ -90,3 +90,4 @@ def test_prompt_does_not_allow_substituting_a_different_insurance_type():
 
     assert "אל תענה עליה בעזרת מקור שמתאר סוג ביטוח אחר" in prompt
     assert "אמור שאין לך מידע מספיק בנושא" in prompt
+    assert "אל תכתוב כתובות URL, קישורי Markdown או מדור 'מקורות:'" in prompt
