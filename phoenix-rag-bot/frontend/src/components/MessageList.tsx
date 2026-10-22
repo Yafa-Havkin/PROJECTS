@@ -2,9 +2,11 @@ import { useEffect, useRef } from "react";
 import type { Message } from "../types";
 import UserMessage from "./UserMessage";
 import BotMessage from "./BotMessage";
+import type { ChatRepresentative } from "../utils/chatRepresentatives";
 
 interface Props {
   messages: Message[];
+  representative: ChatRepresentative;
   showEvidence?: boolean;
   personaId?: string;
   disabled?: boolean;
@@ -14,6 +16,7 @@ interface Props {
 /** Renders the conversation; auto-scrolls to the newest message. */
 export default function MessageList({
   messages,
+  representative,
   showEvidence = false,
   personaId = "customer",
   disabled = false,
@@ -28,9 +31,11 @@ export default function MessageList({
   if (messages.length === 0) {
     return (
       <div className="flex h-full flex-col items-center justify-center py-10 text-center">
-        <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-3xl bg-gradient-to-br from-phoenix-glow via-phoenix to-phoenix-dark text-3xl shadow-glow">
-          🔥
-        </div>
+        <img
+          src={representative.image}
+          alt="נציג הפניקס"
+          className="mb-3 h-16 w-16 rounded-full object-cover shadow-glow ring-2 ring-white"
+        />
         <h2 className="text-lg font-bold text-phoenix-navy">
           שלום! אני העוזר הדיגיטלי של הפניקס
         </h2>
@@ -75,6 +80,7 @@ export default function MessageList({
           <BotMessage
             key={m.id}
             message={m}
+            representative={representative}
             showEvidence={showEvidence}
             onQuestion={onQuestion}
             disabled={disabled}

@@ -1,9 +1,11 @@
 import type { Message } from "../types";
 import { sanitizeAnswerContent } from "../utils/sanitizeAnswerContent";
 import { getFollowUpQuestions } from "../utils/followUpQuestions";
+import type { ChatRepresentative } from "../utils/chatRepresentatives";
 
 interface Props {
   message: Message;
+  representative: ChatRepresentative;
   showEvidence?: boolean;
   onQuestion?: (question: string) => void;
   disabled?: boolean;
@@ -12,6 +14,7 @@ interface Props {
 /** The bot's chat bubble (left-aligned) with optional sources list. */
 export default function BotMessage({
   message,
+  representative,
   showEvidence = false,
   onQuestion,
   disabled = false,
@@ -34,9 +37,11 @@ export default function BotMessage({
   });
   return (
     <div className="flex animate-fade-in items-start gap-2">
-      <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-phoenix-glow via-phoenix to-phoenix-dark text-sm">
-        🔥
-      </div>
+      <img
+        src={representative.image}
+        alt="נציג הפניקס"
+        className="mt-0.5 h-8 w-8 shrink-0 rounded-full object-cover ring-1 ring-slate-200"
+      />
       <div
         className={[
           "max-w-[80%] rounded-2xl rounded-tl-sm px-4 py-2.5 shadow-sm",

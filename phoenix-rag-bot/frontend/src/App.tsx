@@ -8,6 +8,10 @@ import PersonaToggle from "./components/PersonaToggle";
 import MessageList from "./components/MessageList";
 import LoadingIndicator from "./components/LoadingIndicator";
 import MessageInput from "./components/MessageInput";
+import {
+  pickChatRepresentative,
+  type ChatRepresentative,
+} from "./utils/chatRepresentatives";
 
 const DEFAULT_PERSONA_ID = "customer";
 
@@ -28,6 +32,8 @@ function App() {
   const { sessionId, newSession } = useSession();
   const [chatOpen, setChatOpen] = useState(false);
   const [chatExpanded, setChatExpanded] = useState(false);
+  const [chatRepresentative, setChatRepresentative] =
+    useState<ChatRepresentative>(() => pickChatRepresentative());
 
   const [state, setState] = useState<ChatState>({
     sessionId: "",
@@ -125,6 +131,9 @@ function App() {
       if (personaId === state.activePersonaId) return;
       streamingIdRef.current = null;
       setState((prev) => ({ ...prev, activePersonaId: personaId, messages: [], isGenerating: false }));
+      setChatRepresentative((previous) =>
+        pickChatRepresentative(previous.id),
+      );
       void newSession();
     },
     [newSession, state.activePersonaId]
@@ -134,6 +143,9 @@ function App() {
     if (state.isGenerating) return;
     streamingIdRef.current = null;
     setState((prev) => ({ ...prev, messages: [], isGenerating: false }));
+    setChatRepresentative((previous) =>
+      pickChatRepresentative(previous.id),
+    );
     await newSession();
   }, [newSession, state.isGenerating]);
 
@@ -238,7 +250,11 @@ function App() {
           {/* Header */}
           <header className="chat-window-header">
             <div className="flex items-center gap-2">
-              <span className="text-xl">🔥</span>
+              <img
+                src={chatRepresentative.image}
+                alt="נציג הפניקס"
+                className="h-10 w-10 rounded-full border-2 border-white/70 object-cover"
+              />
               <div>
                 <div className="font-bold text-sm">עוזר הפניקס</div>
                 <div className="text-xs text-white/75">
@@ -301,6 +317,7 @@ function App() {
           <main className="chat-window-messages">
             <MessageList
               messages={state.messages}
+              representative={chatRepresentative}
               showEvidence={state.activePersonaId === "agent"}
               personaId={state.activePersonaId}
               disabled={state.isGenerating}
