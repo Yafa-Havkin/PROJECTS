@@ -73,20 +73,27 @@ export default function MessageList({
 
   return (
     <div className="space-y-4">
-      {messages.map((m) =>
-        m.role === "user" ? (
-          <UserMessage key={m.id} message={m} />
-        ) : (
-          <BotMessage
-            key={m.id}
-            message={m}
-            representative={representative}
-            showEvidence={showEvidence}
-            onQuestion={onQuestion}
-            disabled={disabled}
-          />
+      {messages
+        .filter(
+          (message) =>
+            message.role === "user" ||
+            !message.isStreaming ||
+            message.content.length > 0,
         )
-      )}
+        .map((m) => (
+          m.role === "user" ? (
+            <UserMessage key={m.id} message={m} />
+          ) : (
+            <BotMessage
+              key={m.id}
+              message={m}
+              representative={representative}
+              showEvidence={showEvidence}
+              onQuestion={onQuestion}
+              disabled={disabled}
+            />
+          )
+        ))}
       <div ref={endRef} />
     </div>
   );

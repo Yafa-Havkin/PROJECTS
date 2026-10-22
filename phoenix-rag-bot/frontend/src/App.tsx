@@ -149,6 +149,12 @@ function App() {
     await newSession();
   }, [newSession, state.isGenerating]);
 
+  const latestMessage = state.messages[state.messages.length - 1];
+  const waitingForFirstToken =
+    state.isGenerating &&
+    latestMessage?.role === "assistant" &&
+    latestMessage.content.length === 0;
+
   return (
     <div dir="rtl" className="relative min-h-screen">
 
@@ -324,7 +330,7 @@ function App() {
               onQuestion={handleSend}
             />
             <LoadingIndicator
-              visible={state.isGenerating}
+              visible={waitingForFirstToken}
               representative={chatRepresentative}
             />
           </main>
