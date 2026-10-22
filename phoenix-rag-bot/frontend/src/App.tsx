@@ -323,7 +323,10 @@ function App() {
               disabled={state.isGenerating}
               onQuestion={handleSend}
             />
-            <LoadingIndicator visible={state.isGenerating} />
+            <LoadingIndicator
+              visible={state.isGenerating}
+              representative={chatRepresentative}
+            />
           </main>
 
           {/* Input */}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import type { ChatRepresentative } from "../utils/chatRepresentatives";
 
 const LOADING_MESSAGES = [
   "מחפש במידע הרלוונטי באתר הפניקס...",
@@ -7,7 +8,15 @@ const LOADING_MESSAGES = [
 ];
 
 /** Three bouncing dots shown while the bot is generating an answer. */
-export default function LoadingIndicator({ visible }: { visible: boolean }) {
+interface Props {
+  visible: boolean;
+  representative: ChatRepresentative;
+}
+
+export default function LoadingIndicator({
+  visible,
+  representative,
+}: Props) {
   const [messageIndex, setMessageIndex] = useState(0);
 
   useEffect(() => {
@@ -27,9 +36,11 @@ export default function LoadingIndicator({ visible }: { visible: boolean }) {
 
   return (
     <div role="status" aria-live="polite" className="mt-4 flex items-center gap-2">
-      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-phoenix-glow via-phoenix to-phoenix-dark text-sm">
-        🔥
-      </div>
+      <img
+        src={representative.image}
+        alt="נציג הפניקס"
+        className="h-8 w-8 shrink-0 rounded-full object-cover ring-1 ring-slate-200"
+      />
       <div className="flex items-center gap-3 rounded-2xl rounded-tl-sm bg-white px-4 py-3 ring-1 ring-slate-200">
         <span className="flex shrink-0 items-center gap-1" aria-hidden="true">
           <span className="h-2 w-2 animate-bounce-dot rounded-full bg-phoenix [animation-delay:0ms]" />
