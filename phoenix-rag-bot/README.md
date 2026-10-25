@@ -134,20 +134,17 @@ pytest + Hypothesis.
 
 ## ☁️ פריסה לענן
 
-הפרויקט פרוס ב-Railway כשירותי Frontend ו-Backend נפרדים. קובץ
-`requirements.txt` מכיל תלויות שרת; תלויות סריקה ובדיקות נמצאות
-ב-`requirements-crawler.txt` וב-`requirements-dev.txt`. קיימות גם תצורות
-חלופיות ל-Vercel ול-Render.
+הפרויקט פרוס ב-Vercel, כאשר ה-Frontend וה-API מוגשים מאותו דומיין. קיימות גם
+תצורות חלופיות ל-Railway ול-Render. קובץ `requirements.txt` מכיל תלויות שרת;
+תלויות סריקה ובדיקות נמצאות ב-`requirements-crawler.txt` וב-`requirements-dev.txt`.
 
-- **קישור למשתמשים (Frontend):** [https://projects-production-77a3.up.railway.app](https://projects-production-77a3.up.railway.app)
-- **Backend (בדיקת תקינות):** [https://projects-production-5e07.up.railway.app/api/health](https://projects-production-5e07.up.railway.app/api/health)
-- **Backend (בדיקת מוכנות לבוט):** [https://projects-production-5e07.up.railway.app/api/ready](https://projects-production-5e07.up.railway.app/api/ready)
+- **קישור למשתמשים (Frontend):** [https://phoenix-rag-bot-roan.vercel.app/](https://phoenix-rag-bot-roan.vercel.app/)
+- **בדיקת תקינות:** [https://phoenix-rag-bot-roan.vercel.app/api/health](https://phoenix-rag-bot-roan.vercel.app/api/health)
+- **בדיקת מוכנות לבוט:** [https://phoenix-rag-bot-roan.vercel.app/api/ready](https://phoenix-rag-bot-roan.vercel.app/api/ready)
 
 בדיקת `/api/ready` מחזירה `200` רק כאשר מאגר הידע אינו ריק ומפתח Gemini מוגדר.
-ה-Frontend שולח בקשות API ל-Backend שלמעלה; אפשר להגדיר בשירות ה-Frontend את
-`VITE_API_BASE_URL` לכתובת ה-Backend. לפרטי הגדרה ובדיקות מוכנות ראו
-[DEPLOY.md](./DEPLOY.md). למדריך דמו, ארכיטקטורה ותשובות לשאלות שופטים ראו
-[PRESENTATION_GUIDE.md](./PRESENTATION_GUIDE.md).
+לפרטי הגדרה ובדיקות מוכנות ראו [DEPLOY.md](./DEPLOY.md). למדריך דמו,
+ארכיטקטורה ותשובות לשאלות שופטים ראו [PRESENTATION_GUIDE.md](./PRESENTATION_GUIDE.md).
 
 ---
 
